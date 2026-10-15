@@ -13,7 +13,7 @@ import time
 import websockets
 
 API_KEY = os.environ.get("AISSTREAM_API_KEY", "")
-LISTEN_SECONDS = int(os.environ.get("LISTEN_SECONDS", "150"))
+LISTEN_SECONDS = int(os.environ.get("LISTEN_SECONDS", "240"))
 STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "ais_state.json")
 MAX_EVENTS = 30
 KEEP_DAYS = 10
@@ -24,7 +24,10 @@ PORTS = {
     "광양항": [[34.80, 127.60], [34.98, 127.85]],
     "포항항": [[35.95, 129.33], [36.10, 129.50]],
     "울산항": [[35.40, 129.30], [35.55, 129.45]],
+    "대한해협 접근 수로": [[34.40, 128.30], [35.40, 129.80]],
 }
+# 키 정상 여부 확인용 (수신량이 많은 해역, 저장하지 않음)
+DIAG_BOX = [[1.10, 103.60], [1.35, 104.10]]  # 싱가포르 해협
 
 NAV_STATUS = {
     0: "항해 중", 1: "묘박(정박지 대기)", 2: "조종 불능", 3: "조종 제한",
@@ -47,15 +50,17 @@ def parse_time(s):
         return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
 
-async def collect():
+async def collect(boxes=None, seconds=None):
+    boxes = boxes or list(PORTS.values())
+    seconds = seconds or LISTEN_SECONDS
     msgs = []
     async with websockets.connect("wss://stream.aisstream.io/v0/stream", open_timeout=20) as ws:
         await ws.send(json.dumps({
             "APIKey": API_KEY,
-            "BoundingBoxes": list(PORTS.values()),
+            "BoundingBoxes": boxes,
             "FilterMessageTypes": ["PositionReport", "ShipStaticData"],
         }))
-        end = time.time() + LISTEN_SECONDS
+        end = time.time() + seconds
         while True:
             remain = end - time.time()
             if remain <= 0:
@@ -138,11 +143,21 @@ def main():
     try:
         msgs = asyncio.run(collect())
     except Exception as e:
-        print(f"수집 실패, 기존 데이터를 유지합니다: {e}")
+        print(f"수집 실패, 기존 데이터를 유지합니다: {type(e).__name__}: {e}")
         return 0
+    types = {}
+    for m in msgs:
+        types[m.get("MessageType")] = types.get(m.get("MessageType"), 0) + 1
+    print(f"[진단] 국내 해역 {LISTEN_SECONDS}초 수신: 전체 {len(msgs)}건, 유형별 {types}")
     n_pos = update_state(state, msgs)
     if n_pos == 0:
         print("수신한 위치 신호가 없어 기존 데이터를 유지합니다.")
+        try:
+            d = asyncio.run(collect([DIAG_BOX], 20))
+            print(f"[진단] 싱가포르 해협 20초 수신: {len(d)}건 "
+                  + ("→ API 키는 정상, 국내 해역 수신이 부족한 상태" if d else "→ 키 또는 서비스 연결 문제 가능성"))
+        except Exception as e:
+            print(f"[진단] 싱가포르 해협 확인 실패: {e} → 키 또는 서비스 연결 문제 가능성")
         return 0
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
     state["updated_utc"] = now

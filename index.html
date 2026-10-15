@@ -406,7 +406,7 @@ function viewLive(){
   if(LIVE.err) return `<div class="card"><h2>실제 AIS 대조</h2><p class="muted">${LIVE.err}</p></div>`;
   const d=LIVE.data, vs=liveVessels();
   const ageH = d.updated_utc ? (Date.now()-new Date(d.updated_utc).getTime())/H : null;
-  const head = `<div class="intro"><b>실제 데이터</b> 이 화면은 부산항, 광양항, 포항항, 울산항 해역의 실제 선박 AIS 신호를 30분마다 자동 수집해 보여줍니다. 선박의 항해 상태가 "묘박(정박지 대기)"이나 "계류(접안)"로 바뀐 시각을 잡아내, 작업일지에 적힌 시각과 대조하는 정산항해사의 교차검증 기능을 실제 기록으로 시연합니다.</div>
+  const head = `<div class="intro"><b>실제 데이터</b> 이 화면은 부산항, 광양항, 포항항, 울산항과 대한해협 접근 수로의 실제 선박 AIS 신호를 30분마다 자동 수집해 보여줍니다. 선박의 항해 상태가 "묘박(정박지 대기)"이나 "계류(접안)"로 바뀐 시각을 잡아내, 작업일지에 적힌 시각과 대조하는 정산항해사의 교차검증 기능을 실제 기록으로 시연합니다.</div>
   <div class="card" style="padding:14px 20px"><div class="row" style="align-items:center;gap:18px">
     <div><span class="muted small">출처</span> <b>${d.source||'AISStream'}</b></div>
     <div><span class="muted small">최종 갱신</span> <b>${d.updated_utc?kst(d.updated_utc)+' (한국시간)':'아직 수집 전'}</b></div>
