@@ -13,13 +13,18 @@ import time
 import websockets
 
 API_KEY = os.environ.get("AISSTREAM_API_KEY", "")
-LISTEN_SECONDS = int(os.environ.get("LISTEN_SECONDS", "240"))
+LISTEN_SECONDS = int(os.environ.get("LISTEN_SECONDS", "180"))
 STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "ais_state.json")
 MAX_EVENTS = 30
-KEEP_DAYS = 10
+KEEP_DAYS = 5
 
 # 항만 해역 (위도, 경도) 남서쪽과 북동쪽 꼭짓점
 PORTS = {
+    # 해외 항만 (공개 AIS 수신망의 수신이 원활한 해역)
+    "로테르담항": [[51.85, 3.60], [52.05, 4.35]],
+    "싱가포르항": [[1.10, 103.60], [1.40, 104.15]],
+    "호르무즈 해협 인근": [[25.00, 55.50], [26.80, 57.50]],
+    # 국내 항만 (현재 공개 수신망에서는 신호가 거의 잡히지 않음, 기획서상 PORT-MIS로 연계 예정)
     "부산항": [[34.95, 128.70], [35.15, 129.15]],
     "광양항": [[34.80, 127.60], [34.98, 127.85]],
     "포항항": [[35.95, 129.33], [36.10, 129.50]],
@@ -148,7 +153,7 @@ def main():
     types = {}
     for m in msgs:
         types[m.get("MessageType")] = types.get(m.get("MessageType"), 0) + 1
-    print(f"[진단] 국내 해역 {LISTEN_SECONDS}초 수신: 전체 {len(msgs)}건, 유형별 {types}")
+    print(f"[진단] 대상 해역 {LISTEN_SECONDS}초 수신: 전체 {len(msgs)}건, 유형별 {types}")
     n_pos = update_state(state, msgs)
     if n_pos == 0:
         print("수신한 위치 신호가 없어 기존 데이터를 유지합니다.")
@@ -168,7 +173,10 @@ def main():
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=1)
     os.replace(tmp, STATE_PATH)
-    print(f"갱신 완료: 메시지 {len(msgs)}건, 위치 신호 {n_pos}건, 선박 {len(state['vessels'])}척")
+    by_port = {}
+    for v in state["vessels"].values():
+        by_port[v.get("port")] = by_port.get(v.get("port"), 0) + 1
+    print(f"갱신 완료: 메시지 {len(msgs)}건, 위치 신호 {n_pos}건, 선박 {len(state['vessels'])}척, 해역별 {by_port}")
     return 0
 
 

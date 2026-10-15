@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "7,37 * * * *"   # 30분마다 (UTC 기준, 정각 혼잡을 피해 7분, 37분)
   workflow_dispatch: {}       # Actions 탭에서 수동 실행 가능
+  push:                       # 수집 코드가 바뀌면 즉시 한 번 실행
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/**"]
 
 permissions:
   contents: write
