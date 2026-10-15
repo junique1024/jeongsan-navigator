@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정산항해사 프로토타입</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1F3A57; --navy2:#2E5A86; --blue:#1F5F99; --blue-bg:#DCEBF7;
+  --ink:#1E2A36; --sub:#5A6573; --line:#D5DDE5; --bg:#F4F7FA; --card:#FFFFFF;
+  --warn:#D97706; --warn-bg:#FEF3E2; --ok:#15803D; --ok-bg:#E7F6EC; --bad:#B91C1C; --bad-bg:#FDECEC;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans KR",system-ui,-apple-system,"Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.55}
+button{font:inherit;cursor:pointer}
+.app{display:flex;min-height:100vh}
+aside{width:210px;background:var(--navy);color:#fff;flex-shrink:0;display:flex;flex-direction:column}
+.brand{padding:22px 20px 18px;font-weight:700;font-size:18px;letter-spacing:-.2px}
+.brand small{display:block;font-weight:400;font-size:11.5px;opacity:.7;margin-top:2px}
+nav button{display:block;width:100%;text-align:left;background:none;border:0;color:#fff;padding:12px 20px;font-size:14px;opacity:.85}
+nav button:hover{background:rgba(255,255,255,.08);opacity:1}
+nav button.on{background:var(--navy2);opacity:1;font-weight:500}
+.aside-foot{margin-top:auto;padding:16px 20px;font-size:11.5px;opacity:.65}
+main{flex:1;min-width:0}
+.top{background:#fff;border-bottom:1px solid var(--line);padding:14px 28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.top h1{font-size:17px;margin:0}
+.badge{white-space:nowrap;display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:999px;background:var(--bg);color:var(--sub);border:1px solid var(--line)}
+.badge.warn{background:var(--warn-bg);color:var(--warn);border-color:#F6C26B}
+.badge.ok{background:var(--ok-bg);color:var(--ok);border-color:#A7DDB6}
+.badge.blue{background:var(--blue-bg);color:var(--blue);border-color:#A9C9E8}
+.badge.bad{background:var(--bad-bg);color:var(--bad);border-color:#F2B8B8}
+.spacer{flex:1}
+.content{padding:24px 28px 48px;max-width:1180px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+.card h2{font-size:15px;margin:0 0 12px}
+.muted{color:var(--sub)}
+.small{font-size:12.5px}
+.btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:9px 16px;color:var(--ink)}
+.btn:hover{border-color:var(--blue)}
+.btn.primary{background:var(--blue);color:#fff;border-color:var(--blue);font-weight:500}
+.btn.primary:hover{background:#174C7C}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.col{flex:1;min-width:260px}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:10px 10px;white-space:normal;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;color:var(--sub);font-weight:500;background:var(--bg)}
+tr.click{cursor:pointer}
+tr.click:hover td{background:#F8FBFE}
+/* stepper */
+.stepper{display:flex;gap:0;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.step{flex:1;padding:11px 12px;font-size:13px;color:var(--sub);border-right:1px solid var(--line);display:flex;align-items:center;gap:8px;min-width:0}
+.step:last-child{border-right:0}
+.step .n{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.step.on{color:var(--ink);font-weight:500;background:var(--blue-bg)}
+.step.on .n{border-color:var(--blue);color:var(--blue)}
+.step.done .n{background:var(--blue);border-color:var(--blue);color:#fff}
+.step span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* docs */
+.doc{border:1.5px dashed var(--line);border-radius:10px;padding:16px;flex:1;min-width:200px;background:#FBFCFD}
+.doc.ready{border-style:solid;border-color:#A9C9E8;background:#fff}
+.doc b{display:block;margin-bottom:4px}
+.progress{margin-top:14px}
+.pitem{display:flex;align-items:center;gap:10px;padding:7px 0;color:var(--sub)}
+.pitem .dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--line);flex-shrink:0}
+.pitem.run{color:var(--ink)} .pitem.run .dot{border-color:var(--blue);border-top-color:transparent;animation:spin .8s linear infinite}
+.pitem.done{color:var(--ink)} .pitem.done .dot{background:var(--ok);border-color:var(--ok)}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* clauses */
+.clause{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.clause-h{display:flex;gap:12px;align-items:center;padding:12px 14px;cursor:pointer;background:#fff}
+.clause-h:hover{background:#F8FBFE}
+.clause-h .ref{font-size:12px;color:var(--blue);font-weight:500;width:96px;flex-shrink:0}
+.clause-h .val{flex:1}
+.clause-b{display:none;padding:12px 14px;background:var(--bg);border-top:1px solid var(--line)}
+.clause.open .clause-b{display:block}
+.orig{font-family:Georgia,"Times New Roman",serif;font-size:13px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 12px;line-height:1.65}
+mark{background:#FFE7A8;padding:0 2px;border-radius:2px}
+/* timeline */
+.tl{position:relative;height:46px;background:#E3ECF5;border-radius:6px;margin:8px 0 4px;overflow:hidden}
+.seg{position:absolute;top:0;bottom:0}
+.tl-axis{position:relative;height:42px;font-size:11.5px;color:var(--sub)}
+.tl-axis span{position:absolute;transform:translateX(-50%);white-space:nowrap;top:2px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--sub);margin-top:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px}
+.mm{border:1.5px solid #F6C26B;background:var(--warn-bg);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.mm.resolved{border-color:#A7DDB6;background:var(--ok-bg)}
+.mm .opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.opt{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;text-align:left}
+.opt.sel{border-color:var(--blue);box-shadow:0 0 0 2px var(--blue-bg)}
+/* summary cards */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .l{font-size:12px;color:var(--sub)}
+.kpi .v{font-size:20px;font-weight:700;margin-top:4px}
+.kpi.hl{border-color:var(--blue);background:var(--blue-bg)}
+.calc td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cite{font-size:12px;color:var(--blue);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.notice{font-size:12.5px;color:var(--sub);padding:10px 14px;border-left:3px solid var(--line);background:#fff;border-radius:0 8px 8px 0}
+.footer-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:6px}
+.done-box{text-align:center;padding:28px 20px}
+.done-box .big{font-size:40px;color:var(--ok);line-height:1}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:10}
+.toast.show{opacity:1}
+.modal-bg{position:fixed;inset:0;background:rgba(15,25,35,.45);display:none;align-items:center;justify-content:center;z-index:9;padding:16px}
+.modal-bg.show{display:flex}
+.modal{background:#fff;border-radius:12px;max-width:640px;width:100%;padding:20px 22px;max-height:85vh;overflow:auto}
+.intro{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:16px;font-size:13px;color:var(--sub)}
+.intro b{color:var(--ink)}
+.yes{color:var(--ok);font-weight:500}.no{color:var(--bad);font-weight:500}.weak{color:var(--warn);font-weight:500}
+@media (max-width:860px){
+  .app{flex-direction:column} aside{width:100%;flex-direction:row;flex-wrap:wrap;align-items:center}
+  .brand{padding:12px 16px} nav{display:flex;flex-wrap:wrap} nav button{width:auto;padding:10px 12px}
+  .aside-foot{display:none} .content{padding:16px} .top{padding:12px 16px}
+  .kpis{grid-template-columns:repeat(2,1fr)} .step span.t{display:none} .step{justify-content:center}
+  .tbl-wrap{overflow-x:auto} .tbl-wrap table{min-width:520px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">정산항해사<small>벌크선 항차 정산 AI 에이전트</small></div>
+    <nav>
+      <button data-view="list" class="on">항차 목록</button>
+      <button data-view="settle">항차 정산</button>
+      <button data-view="compare">계약서 비교</button>
+      <button data-view="deadline">청구 기한</button>
+      <button data-view="live">실제 AIS 대조</button>
+    </nav>
+    <div class="aside-foot">2026 해운/항만/물류 AX 혁신 아이디어 공모전 출품 프로토타입<br>정산 시나리오는 가상 데이터이며, 실제 AIS 대조 화면만 실제 선박 데이터입니다.</div>
+  </aside>
+  <main>
+    <div class="top"><h1 id="title">항차 목록</h1><span id="topBadge"></span><div class="spacer"></div><span class="badge" id="dataBadge">시연용 가상 데이터</span></div>
+    <div class="content" id="view"></div>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-bg" id="modalBg"><div class="modal" id="modal"></div></div>
+
+<script>
+// ---------- 가상 데이터 ----------
+const H = 3600e3;
+const T = s => new Date(s + ':00+09:00').getTime(); // KST 기준 표기
+const fmt = ms => { const d = new Date(ms + 9*H); return `${d.getUTCMonth()+1}/${d.getUTCDate()} ${String(d.getUTCHours()).padStart(2,'0')}:${String(d.getUTCMinutes()).padStart(2,'0')}`; };
+const dh = h => { const sign = h<0?'-':''; h=Math.abs(h); const d=Math.floor(h/24); const r=Math.round((h-d*24)*10)/10; return `${sign}${d}일 ${r}시간`; };
+const fmtD = ms => { const d = new Date(ms + 9*H); return `${d.getUTCFullYear()}년 ${d.getUTCMonth()+1}월 ${d.getUTCDate()}일`; };
+const usd = n => 'USD ' + Math.round(n).toLocaleString('en-US');
+const eur = n => 'EUR ' + Math.round(n).toLocaleString('en-US');
+
+const V = {
+  id:'V-0412', vessel:'MV 가상호 (Supramax)', cargo:'요소 비료 50,000톤', load:'중동 적하항 (가상)', disch:'로테르담 (가상 양하)',
+  cp:'Voyage Charter Party, GENCON 기반 + Rider Clauses (가상)',
+  nor:T('2026-10-03T08:00'), anchor_sof:T('2026-10-03T06:00'), anchor_ais:T('2026-10-03T07:40'),
+  shiftStart:T('2026-10-04T08:00'), berth_sof:T('2026-10-04T10:00'), berth_ais:T('2026-10-04T12:30'),
+  rainS:T('2026-10-06T02:00'), rainE:T('2026-10-06T08:00'), end:T('2026-10-13T04:00'),
+  qty:50000, rate:10000, demRate:20000, timeBarDays:90,
+  warPremium:38500, etsT:3120, etsShare:0.5, eua:72
+};
+
+const CLAUSES = [
+  {k:'start', ref:'제6조', title:'정박기간 개시', val:'NOR 제출 후 6시간 경과 시 개시, 접안 여부 무관(WIBON)',
+   orig:'Clause 6. <mark>Laytime for discharging shall commence 6 running hours after Notice of Readiness has been tendered</mark>, whether in berth or not.'},
+  {k:'allow', ref:'제7조', title:'허용 정박기간', val:'1일 10,000톤, 일요일과 공휴일 포함(SHINC) → 50,000톤 ÷ 10,000톤 = 5일',
+   orig:'Clause 7. Cargo to be discharged at the average rate of <mark>10,000 metric tons per day of 24 consecutive hours, Sundays and holidays included</mark>.'},
+  {k:'except', ref:'제8조', title:'제외 사유', val:'우천으로 하역 중단된 시간, 정박지에서 선석까지 이동 시간은 정박기간에서 제외',
+   orig:'Clause 8. <mark>Time lost due to rain preventing discharge</mark> shall not count as laytime. <mark>Time used in shifting from anchorage to berth</mark> shall not count, even if vessel is on demurrage.'},
+  {k:'dem', ref:'제9조', title:'체선료율', val:'1일 USD 20,000, 일할 계산',
+   orig:'Clause 9. Demurrage shall be paid by Charterers at the rate of <mark>USD 20,000 per day or pro rata</mark> for any part of a day.'},
+  {k:'bar', ref:'제24조', title:'청구 기한', val:'하역 완료 후 90일 이내 증빙과 함께 청구하지 않으면 청구권 소멸',
+   orig:'Clause 24. Charterers shall be discharged from all liability for demurrage unless a claim with supporting documents has been presented <mark>within 90 days of completion of discharge</mark>.'},
+  {k:'war', ref:'부속 31조', title:'전쟁위험 할증보험료', val:'고위험 해역 통항에 따른 추가 전쟁보험료는 용선자가 상환 (전쟁위험 표준 조항 편입)',
+   orig:'Rider Clause 31. War Risks clause incorporated. <mark>Any additional war risk insurance premiums incurred by Owners</mark> for the voyage <mark>shall be reimbursed by Charterers</mark> on presentation of underwriters\' invoices.'},
+  {k:'ets', ref:'부속 35조', title:'배출권(EU ETS) 비용', val:'해당 항차 배출량에 대한 EU ETS 비용은 용선자 부담, 산정 근거 자료 첨부 조건',
+   orig:'Rider Clause 35. Emissions Trading Scheme. <mark>Charterers shall pay to Owners the cost of EU Allowances</mark> attributable to the voyage, <mark>calculated on verified emissions data</mark> supplied by Owners.'}
+];
+
+const state = { view:'list', step:1, docs:false, processed:false, choice:{m1:null,m2:null}, approved:false };
+
+// ---------- 계산 ----------
+function calc(){
+  const start = V.nor + 6*H;
+  const berth = state.choice.m2 === 'ais' ? V.berth_ais : V.berth_sof;
+  const shiftH = (berth - V.shiftStart)/H;
+  const rainH = (V.rainE - V.rainS)/H;
+  const gross = (V.end - start)/H;
+  const used = gross - shiftH - rainH;
+  const allowed = V.qty / V.rate * 24;
+  const over = used - allowed;
+  const dem = over > 0 ? over/24*V.demRate : 0;
+  const ets = V.etsT * V.etsShare * V.eua;
+  const bar = V.end + V.timeBarDays*24*H;
+  return {start, berth, shiftH, rainH, gross, used, allowed, over, dem, ets, bar};
+}
+const daysLeft = ms => Math.ceil((ms - T('2026-10-15T09:00'))/(24*H));
+
+// ---------- 공통 ----------
+const $ = s => document.querySelector(s);
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),1800); }
+function modal(html){ $('#modal').innerHTML = html + '<div class="footer-actions"><button class="btn" onclick="closeModal()">닫기</button></div>'; $('#modalBg').classList.add('show'); }
+function closeModal(){ $('#modalBg').classList.remove('show'); }
+$('#modalBg').addEventListener('click', e => { if(e.target.id==='modalBg') closeModal(); });
+function showClause(k){ const c = CLAUSES.find(x=>x.k===k); modal(`<h2 style="margin:0 0 6px;font-size:16px">${c.ref} ${c.title}</h2><p class="muted small" style="margin:0 0 10px">${V.cp}</p><div class="orig">${c.orig}</div><p class="small" style="margin:12px 0 0"><b>요약</b> ${c.val}</p>`); }
+function go(view){ state.view=view; document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on', b.dataset.view===view)); render(); window.scrollTo(0,0); }
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => go(b.dataset.view));
+
+// ---------- 항차 목록 ----------
+function viewList(){
+  const c = calc();
+  const rows = [
+    {id:'V-0412', v:'MV 가상호', port:'로테르담', st: state.approved ? '<span class="badge ok">승인 완료</span>' : '<span class="badge blue">정산 대기</span>', dl:`D-${daysLeft(c.bar)}`, go:true},
+    {id:'V-0405', v:'MV 시연호', port:'광양', st:'<span class="badge warn">이의 대응 중</span>', dl:'D-41'},
+    {id:'V-0398', v:'MV 견본호', port:'포항', st:'<span class="badge ok">승인 완료</span>', dl:'청구 완료'},
+    {id:'V-0377', v:'MV 예시호', port:'싱가포르', st:'<span class="badge bad">청구서 미작성</span>', dl:'<span class="no">D-6</span>'}
+  ];
+  return `
+  <div class="intro"><b>시연 안내</b> 이 화면은 공모전 기획서 "정산항해사"의 핵심 사용자 흐름을 보여주는 프로토타입입니다. 아래 목록에서 <b>V-0412</b> 항차를 눌러 문서 업로드부터 승인까지 진행해 보세요. 모든 선박, 계약, 금액은 가상 데이터입니다.</div>
+  <div class="card"><h2>진행 중인 항차</h2><div class="tbl-wrap"><table>
+    <tr><th>항차</th><th>선박</th><th>양하항</th><th>정산 상태</th><th>청구 기한</th></tr>
+    ${rows.map(r=>`<tr class="${r.go?'click':''}" ${r.go?`onclick="go('settle')"`:''}><td><b>${r.id}</b></td><td>${r.v}</td><td>${r.port}</td><td>${r.st}</td><td>${r.dl}</td></tr>`).join('')}
+  </table></div></div>
+  <div class="notice">V-0377은 청구 기한이 6일 남았습니다. 정산항해사는 기한이 임박한 항차를 목록 상단과 청구 기한 화면에 함께 표시합니다.</div>`;
+}
+
+// ---------- 항차 정산 ----------
+const STEPS = ['문서 업로드','조항 추출','기록 대조','계산과 재청구','승인'];
+function stepper(){ return `<div class="stepper">${STEPS.map((s,i)=>{const n=i+1;const fin=n<state.step||(state.approved&&n===5);const cls=fin?'done':(n===state.step?'on':'');return `<div class="step ${cls}"><span class="n">${fin?'✓':n}</span><span class="t">${s}</span></div>`}).join('')}</div>`; }
+
+function viewSettle(){
+  const head = `<div class="card" style="padding:14px 20px"><div class="row" style="gap:24px;align-items:center"><div><b style="font-size:15px">${V.vessel}</b> <span class="muted">| 항차 ${V.id}</span></div><div class="muted small">${V.cargo} | ${V.load} → ${V.disch}</div><div class="muted small">호르무즈 인근 통항 대기 4일 후 양하항 하역 지연</div></div></div>`;
+  return stepper() + head + [s1,s2,s3,s4,s5][state.step-1]();
+}
+
+function s1(){
+  const docs = [['용선계약서 (C/P)','VC_V0412_CP_with_riders.pdf, 38쪽'],['작업일지 (SOF)','SOF_Rotterdam_V0412.pdf, 4쪽'],['하역준비완료통지 (NOR)','NOR_Rotterdam_V0412.pdf, 1쪽']];
+  return `<div class="card"><h2>1. 항차 문서 업로드</h2>
+  <p class="muted small" style="margin-top:-4px">담당자는 이메일로 받은 문서를 그대로 올립니다. 별도 양식에 옮겨 적지 않습니다.</p>
+  <div class="row">${docs.map(d=>`<div class="doc ${state.docs?'ready':''}"><b>${d[0]}</b><span class="small muted">${state.docs?d[1]:'파일을 끌어다 놓거나 선택'}</span></div>`).join('')}</div>
+  <div class="footer-actions" style="margin-top:14px">
+    ${state.docs?'':'<button class="btn" onclick="loadDocs()">샘플 문서 불러오기</button>'}
+    <button class="btn primary" ${state.docs&&!state.processed?'':'disabled'} onclick="runAI()">AI 분석 시작</button>
+  </div>
+  <div class="progress" id="prog"></div></div>
+  <div class="notice">실제 서비스에서는 문서가 사내 서버에서만 처리되며 외부 클라우드로 전송되지 않습니다.</div>`;
+}
+function loadDocs(){ state.docs=true; render(); toast('샘플 문서 3종을 불러왔습니다'); }
+function runAI(){
+  const items=['문서 인식(OCR)과 개인정보 마스킹 (선원 이름 3건 가림)','계약 조항 추출 (본문 및 부속 조항 7개 항목)','작업일지 사건 시각 추출 (12개 사건)','AIS 위치 기록과 시각 대조','정박기간 규칙 엔진 계산','신규 비용 조항 연결과 재청구 초안 작성'];
+  const el=$('#prog'); el.innerHTML = items.map((t,i)=>`<div class="pitem" id="pi${i}"><span class="dot"></span>${t}</div>`).join('');
+  document.querySelector('.btn.primary').disabled = true;
+  let i=0; const tick=()=>{ if(i>0) $('#pi'+(i-1)).className='pitem done'; if(i<items.length){ $('#pi'+i).className='pitem run'; i++; setTimeout(tick, 550);} else { state.processed=true; state.step=2; setTimeout(render, 400); } };
+  tick();
+}
+
+function s2(){
+  return `<div class="card"><h2>2. 계약 조항 추출 결과</h2>
+  <p class="muted small" style="margin-top:-4px">항목을 누르면 계약서 원문에서 해당 문장이 표시됩니다. 모든 추출값은 원문 위치와 연결됩니다.</p>
+  ${CLAUSES.map(c=>`<div class="clause" id="cl_${c.k}"><div class="clause-h" onclick="this.parentNode.classList.toggle('open')"><span class="ref">${c.ref}</span><span class="val"><b>${c.title}</b><br><span class="small muted">${c.val}</span></span><span class="small muted">원문 보기</span></div><div class="clause-b"><div class="orig">${c.orig}</div></div></div>`).join('')}
+  <div class="notice" style="margin-top:12px">부속 31조와 35조는 2026년 신규 비용(전쟁위험 할증보험료, EU ETS) 청구 근거입니다. 근거 조항이 없는 계약서라면 "청구 근거 없음, 협상 필요"로 따로 표시됩니다.</div>
+  <div class="footer-actions" style="margin-top:14px"><button class="btn" onclick="state.step=1;render()">이전</button><button class="btn primary" onclick="state.step=3;render()">다음: 기록 대조</button></div></div>`;
+}
+
+function timeline(c){
+  const t0=V.anchor_sof, t1=V.end, span=t1-t0, p=ms=>((ms-t0)/span*100).toFixed(2)+'%', w=(a,b)=>((b-a)/span*100).toFixed(2)+'%';
+  // 체선 시작 시점 계산: 사용 정박기간이 허용치(120h)에 도달하는 시각
+  let acc=0, cur=c.start, demStart=null; const ex=[[V.shiftStart,c.berth],[V.rainS,V.rainE]];
+  const pts=[c.start, V.shiftStart, c.berth, V.rainS, V.rainE, V.end].sort((a,b)=>a-b);
+  for(let i=0;i<pts.length-1;i++){ const a=pts[i],b=pts[i+1]; if(a<c.start) continue; const excluded=ex.some(e=>a>=e[0]&&b<=e[1]); if(excluded) continue; const len=(b-a)/H; if(acc+len>=c.allowed){ demStart=a+(c.allowed-acc)*H; break;} acc+=len; }
+  return `<div class="tl">
+    <div class="seg" style="left:0;width:${w(t0,c.start)};background:#C9D6E3"></div>
+    <div class="seg" style="left:${p(c.start)};width:${w(c.start,demStart||t1)};background:#9CC0E3"></div>
+    ${demStart?`<div class="seg" style="left:${p(demStart)};width:${w(demStart,t1)};background:#F2A3A3"></div>`:''}
+    <div class="seg" style="left:${p(V.shiftStart)};width:${w(V.shiftStart,c.berth)};background:repeating-linear-gradient(45deg,#E5E7EB,#E5E7EB 4px,#fff 4px,#fff 8px)"></div>
+    <div class="seg" style="left:${p(V.rainS)};width:${w(V.rainS,V.rainE)};background:repeating-linear-gradient(45deg,#E5E7EB,#E5E7EB 4px,#fff 4px,#fff 8px)"></div>
+    <div class="seg" style="left:${p(V.anchor_sof)};width:${w(V.anchor_sof,V.anchor_ais)};border:2px solid var(--warn);background:rgba(246,194,107,.45)"></div>
+    <div class="seg" style="left:${p(V.berth_sof)};width:${w(V.berth_sof,V.berth_ais)};border:2px solid var(--warn);background:rgba(246,194,107,.45)"></div>
+  </div>
+  <div class="tl-axis">
+    <span style="left:0;transform:none;top:2px">도착</span><span style="left:${p(c.start)};top:20px">정박기간 개시</span><span style="left:${p(c.berth)};top:2px">접안</span><span style="left:${p(V.rainS)};top:20px">우천 중단</span>${demStart?`<span style="left:${p(demStart)};top:2px">체선 시작 ${fmt(demStart)}</span>`:''}<span style="right:0;left:auto;transform:none;top:20px">하역 완료 ${fmt(V.end)}</span>
+  </div>
+  <div class="legend"><span><i style="background:#C9D6E3"></i>개시 전</span><span><i style="background:#9CC0E3"></i>정박기간</span><span><i style="background:#F2A3A3"></i>체선</span><span><i style="background:repeating-linear-gradient(45deg,#E5E7EB,#E5E7EB 3px,#fff 3px,#fff 6px);border:1px solid #ccc"></i>제외 시간</span><span><i style="background:rgba(246,194,107,.6);border:1px solid var(--warn)"></i>작업일지와 AIS 불일치</span></div>`;
+}
+
+function s3(){
+  const c=calc(), m=state.choice;
+  const card=(id,title,sof,ais,impact,optA,optB)=>{ const r=m[id]; return `<div class="mm ${r?'resolved':''}">
+    <b>${r?'확인 완료':'확인 필요'}: ${title}</b>
+    <div class="small" style="margin-top:6px">작업일지(SOF) <b>${fmt(sof)}</b> | AIS 기록 <b>${fmt(ais)}</b> | 차이 ${((ais-sof)/H).toFixed(1)}시간</div>
+    <div class="small muted" style="margin-top:4px">${impact}</div>
+    <div class="opts"><button class="opt ${r==='sof'?'sel':''}" onclick="pick('${id}','sof')">${optA}</button><button class="opt ${r==='ais'?'sel':''}" onclick="pick('${id}','ais')">${optB}</button></div></div>`; };
+  return `<div class="card"><h2>3. 작업일지와 외부 기록 대조</h2>
+  <p class="muted small" style="margin-top:-4px">작업일지의 사건 시각 12개를 AIS 위치 기록과 대조했습니다. 1시간 이상 차이 나는 2개 구간만 확인하면 됩니다.</p>
+  ${timeline(c)}</div>
+  ${card('m1','정박지 도착 시각',V.anchor_sof,V.anchor_ais,'NOR 제출(10/3 08:00)이 두 시각 모두보다 늦으므로 정박기간 계산에는 영향이 없습니다. 이의 대응용 기록으로만 남깁니다.','작업일지 시각 유지','AIS 시각으로 정정')}
+  ${card('m2','접안 시각 (이동 시간 제외 구간)',V.berth_sof,V.berth_ais,'정박지에서 선석까지 이동한 시간은 제8조에 따라 정박기간에서 제외됩니다. 어느 시각을 쓰느냐에 따라 제외 시간이 2.0시간 또는 4.5시간이 되어 체선료가 달라집니다. 대리점 확인을 권장합니다.','작업일지 시각 유지 (대리점 확인 완료)','AIS 시각으로 정정')}
+  <div class="footer-actions"><button class="btn" onclick="state.step=2;render()">이전</button><button class="btn primary" ${m.m1&&m.m2?'':'disabled'} onclick="state.step=4;render()">다음: 계산과 재청구</button></div>`;
+}
+function pick(id,v){ state.choice[id]=v; render(); toast(v==='ais'?'AIS 기록으로 정정하고 다시 계산했습니다':'작업일지 시각을 유지했습니다'); }
+
+function s4(){
+  const c=calc();
+  return `<div class="kpis">
+    <div class="kpi"><div class="l">허용 정박기간</div><div class="v">${dh(c.allowed)}</div></div>
+    <div class="kpi"><div class="l">사용 정박기간</div><div class="v">${dh(c.used)}</div></div>
+    <div class="kpi hl"><div class="l">체선료 초안</div><div class="v">${usd(c.dem)}</div></div>
+    <div class="kpi"><div class="l">신규 비용 재청구</div><div class="v">2건</div></div></div>
+  <div class="card"><h2>4-1. 정박기간 계산서</h2><div class="tbl-wrap"><table class="calc">
+    <tr><th>항목</th><th>계산 내용</th><th>근거</th><th style="text-align:right">시간</th></tr>
+    <tr><td>정박기간 개시</td><td>NOR ${fmt(V.nor)} + 6시간 = ${fmt(c.start)}</td><td><span class="cite" onclick="showClause('start')">제6조</span></td><td class="num">-</td></tr>
+    <tr><td>총 경과 시간</td><td>${fmt(c.start)} ~ 하역 완료 ${fmt(V.end)}</td><td>SOF 11번</td><td class="num">${c.gross.toFixed(1)}h</td></tr>
+    <tr><td>제외: 이동 시간</td><td>${fmt(V.shiftStart)} ~ 접안 ${fmt(c.berth)} (${state.choice.m2==='ais'?'AIS 정정':'SOF 기준'})</td><td><span class="cite" onclick="showClause('except')">제8조</span></td><td class="num">-${c.shiftH.toFixed(1)}h</td></tr>
+    <tr><td>제외: 우천 중단</td><td>${fmt(V.rainS)} ~ ${fmt(V.rainE)}</td><td><span class="cite" onclick="showClause('except')">제8조</span>, SOF 7번</td><td class="num">-${c.rainH.toFixed(1)}h</td></tr>
+    <tr><td><b>사용 정박기간</b></td><td></td><td></td><td class="num"><b>${c.used.toFixed(1)}h</b></td></tr>
+    <tr><td>허용 정박기간</td><td>50,000톤 ÷ 1일 10,000톤</td><td><span class="cite" onclick="showClause('allow')">제7조</span></td><td class="num">${c.allowed.toFixed(1)}h</td></tr>
+    <tr><td><b>체선 시간</b></td><td>사용 - 허용</td><td></td><td class="num"><b>${c.over.toFixed(1)}h</b></td></tr>
+    <tr><td><b>체선료</b></td><td>${c.over.toFixed(1)}h ÷ 24 × USD 20,000</td><td><span class="cite" onclick="showClause('dem')">제9조</span></td><td class="num"><b>${usd(c.dem)}</b></td></tr>
+  </table></div><p class="small muted" style="margin:10px 0 0">금액은 언어모델이 아니라 규칙 엔진이 계산하므로 같은 입력에는 항상 같은 결과가 나옵니다.</p></div>
+  <div class="card"><h2>4-2. 신규 비용 재청구 초안</h2><div class="tbl-wrap"><table>
+    <tr><th>항목</th><th>청구 내용</th><th>근거 조항</th><th>첨부 근거</th><th style="text-align:right">금액</th></tr>
+    <tr><td>전쟁위험 할증보험료</td><td>호르무즈 인근 고위험 해역 통항(대기 4일 포함) 추가 보험료</td><td><span class="cite" onclick="showClause('war')">부속 31조</span></td><td class="small">보험사 할증 청구서, AIS 항적 발췌</td><td style="text-align:right;white-space:nowrap">${usd(V.warPremium)}</td></tr>
+    <tr><td>EU ETS 비용</td><td>항차 배출량 3,120 tCO2e × 역외 항해 적용 50% × EUA 72유로</td><td><span class="cite" onclick="showClause('ets')">부속 35조</span></td><td class="small">배출량 산정표, 연료 사용 기록</td><td style="text-align:right;white-space:nowrap">${eur(c.ets)}</td></tr>
+  </table></div>
+  <p class="small muted" style="margin:10px 0 0">청구서에는 계약서 조항과 작업일지 해당 부분의 원문 발췌가 함께 묶여 발송됩니다. 받는 쪽이 근거를 1대1로 대조할 수 있게 하기 위해서입니다.</p></div>
+  <div class="footer-actions"><button class="btn" onclick="state.step=3;render()">이전</button><button class="btn" onclick="previewPack()">근거 패키지 미리보기</button><button class="btn primary" onclick="state.step=5;render()">다음: 검토와 승인</button></div>`;
+}
+function packText(){
+  const c=calc();
+  return `[정산항해사 근거 패키지 | 가상 데이터]\n항차 ${V.id} | ${V.vessel} | ${V.disch}\n계약: ${V.cp}\n\n1. 정박기간 계산\n- 개시: NOR ${fmt(V.nor)} + 6시간 = ${fmt(c.start)} (제6조)\n- 총 경과: ${c.gross.toFixed(1)}시간\n- 제외(이동): ${c.shiftH.toFixed(1)}시간 (제8조, 접안 ${fmt(c.berth)} ${state.choice.m2==='ais'?'AIS 정정':'SOF 기준'})\n- 제외(우천): ${c.rainH.toFixed(1)}시간 (제8조, SOF 7번)\n- 사용 ${c.used.toFixed(1)}시간 / 허용 ${c.allowed.toFixed(1)}시간 (제7조)\n- 체선 ${c.over.toFixed(1)}시간 x USD 20,000/일 = ${usd(c.dem)} (제9조)\n\n2. 신규 비용 재청구\n- 전쟁위험 할증보험료 ${usd(V.warPremium)} (부속 31조)\n- EU ETS 비용 ${eur(c.ets)} (부속 35조)\n\n3. 작업일지와 AIS 대조 기록\n- 정박지 도착: SOF ${fmt(V.anchor_sof)} / AIS ${fmt(V.anchor_ais)} -> ${state.choice.m1==='ais'?'AIS 정정':'SOF 유지'}\n- 접안: SOF ${fmt(V.berth_sof)} / AIS ${fmt(V.berth_ais)} -> ${state.choice.m2==='ais'?'AIS 정정':'SOF 유지'}\n\n4. 청구 기한: ${fmtD(c.bar)} (하역 완료 후 90일, 제24조)\n\n※ AI 생성 초안을 담당자가 검토, 승인한 문서입니다.`;
+}
+function previewPack(){ modal(`<h2 style="margin:0 0 10px;font-size:16px">근거 패키지 미리보기</h2><pre style="white-space:pre-wrap;font-size:12.5px;background:var(--bg);padding:12px;border-radius:8px;margin:0">${packText()}</pre>`); }
+
+function s5(){
+  const c=calc();
+  if(state.approved){
+    return `<div class="card done-box"><div class="big">✓</div><h2 style="margin:10px 0 6px;font-size:18px">정산이 확정되었습니다</h2>
+    <p class="muted" style="margin:0 0 6px">체선료 ${usd(c.dem)}와 신규 비용 재청구 2건이 근거 패키지와 함께 발송 대기열에 등록되었습니다.</p>
+    <p style="margin:0 0 16px">청구 기한 <b>${fmtD(c.bar)}</b> (D-${daysLeft(c.bar)}) 알림이 등록되었습니다.</p>
+    <div class="footer-actions" style="justify-content:center"><button class="btn" onclick="downloadPack()">근거 패키지 내려받기</button><button class="btn" onclick="go('deadline')">청구 기한 보기</button><button class="btn" onclick="resetDemo()">처음부터 다시</button></div></div>`;
+  }
+  return `<div class="card"><h2>5. 담당자 검토와 승인</h2>
+  <table><tr><th>점검 항목</th><th>상태</th></tr>
+  <tr><td>계약 조항 7개 추출, 원문 위치 연결</td><td class="yes">완료</td></tr>
+  <tr><td>작업일지와 AIS 불일치 2건</td><td class="yes">담당자 확인 완료</td></tr>
+  <tr><td>정박기간 계산 (규칙 엔진)</td><td class="yes">${dh(c.used)} 사용, 체선료 ${usd(c.dem)}</td></tr>
+  <tr><td>신규 비용 재청구 2건, 근거 자료 첨부</td><td class="yes">완료</td></tr>
+  <tr><td>청구 기한</td><td>${fmtD(c.bar)}, D-${daysLeft(c.bar)}</td></tr></table>
+  <p class="notice" style="margin:14px 0 0">AI 생성 초안입니다. 담당자 승인 전에는 어떤 문서도 외부로 발송되지 않습니다. 정산항해사는 계산과 근거 제시까지만 수행하며, 분쟁 시 책임 판단은 담당자와 법무 또는 P&I가 결정합니다.</p>
+  <div class="footer-actions" style="margin-top:14px"><button class="btn" onclick="state.step=4;render()">이전</button><button class="btn" onclick="state.step=3;render();toast('수정 요청: 기록 대조 단계로 돌아갑니다')">수정 요청</button><button class="btn primary" onclick="approve()">검토 완료, 승인</button></div></div>`;
+}
+function approve(){ state.approved=true; render(); toast('승인되었습니다. 청구 기한 알림을 등록했습니다'); }
+function downloadPack(){ const b=new Blob(['﻿'+packText()],{type:'text/plain;charset=utf-8'}); const a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download=`근거패키지_${V.id}.txt`; a.click(); URL.revokeObjectURL(a.href); }
+function resetDemo(){ Object.assign(state,{step:1,docs:false,processed:false,choice:{m1:null,m2:null},approved:false}); go('list'); }
+
+// ---------- 계약서 비교 ----------
+function viewCompare(){
+  const Y='<span class="yes">있음</span>', N='<span class="no">없음</span>', W='<span class="weak">불리</span>';
+  const rows=[
+    ['V-0412 (GENCON 기반)',Y,Y,Y,'90일'],
+    ['V-0405 (GENCON 기반)',Y,N,Y,'90일'],
+    ['V-0398 (자사 양식)',W,N,Y,'<span class="weak">30일</span>'],
+    ['V-0377 (용선자 양식)',N,N,W,'<span class="weak">45일</span>'],
+    ['신규 협상 중 (용선자 양식)',Y,W,Y,'60일']
+  ];
+  return `<div class="card"><h2>보유 계약서와 표준 조항 비교</h2>
+  <p class="muted small" style="margin-top:-4px">정산에서 생기는 손실을 다음 계약 협상 단계에서 예방하기 위해, 신규 비용과 청구 기한 조항의 유무와 불리 여부를 표시합니다.</p>
+  <div class="tbl-wrap"><table><tr><th>계약서</th><th>전쟁위험 할증보험료 상환</th><th>EU ETS 비용 배분</th><th>우천, 이동 시간 제외</th><th>청구 기한</th></tr>
+  ${rows.map(r=>`<tr>${r.map((x,i)=>`<td>${i===0?'<b>'+x+'</b>':x}</td>`).join('')}</tr>`).join('')}</table></div></div>
+  <div class="notice">"불리"는 표준 조항과 비교해 선주의 청구 범위가 좁거나 기한이 짧은 경우입니다. V-0377은 전쟁위험과 ETS 조항이 모두 없어 신규 비용을 협상으로 풀어야 합니다.</div>`;
+}
+
+// ---------- 청구 기한 ----------
+function viewDeadline(){
+  const c=calc();
+  const rows=[
+    ['V-0377','체선료 USD 31,200 (초안 미작성)','10/21','<span class="badge bad">D-6</span>'],
+    ['V-0405','체선료 이의 대응 (재계산 제출)','11/25','<span class="badge warn">D-41</span>'],
+    ['V-0412','체선료 '+usd(c.dem)+', 신규 비용 2건', fmtD(c.bar), state.approved?'<span class="badge ok">알림 등록</span>':'<span class="badge blue">D-'+daysLeft(c.bar)+'</span>']
+  ];
+  return `<div class="card"><h2>청구 기한 관리</h2>
+  <p class="muted small" style="margin-top:-4px">계약서마다 다른 청구 기한을 하역 완료일 기준으로 자동 계산해, 임박한 순서로 보여줍니다.</p>
+  <div class="tbl-wrap"><table><tr><th>항차</th><th>청구 내용</th><th>기한</th><th>상태</th></tr>
+  ${rows.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join('')}</table></div></div>
+  <div class="notice">기한 30일 전, 14일 전, 7일 전, 3일 전에 담당자와 팀장에게 알림을 보냅니다.</div>`;
+}
+
+
+// ---------- 실제 AIS 대조 (실데이터) ----------
+const LIVE = { data:null, err:null, loading:false, sel:null, cargoOnly:true, sofTime:'' };
+const kst = iso => { if(!iso) return '-'; const d=new Date(new Date(iso).getTime()+9*H); return `${d.getUTCFullYear()}.${d.getUTCMonth()+1}.${d.getUTCDate()} ${String(d.getUTCHours()).padStart(2,'0')}:${String(d.getUTCMinutes()).padStart(2,'0')}`; };
+const shipType = t => t==null?'미상':(t>=70&&t<=79?'화물선':t>=80&&t<=89?'유조선':t>=60&&t<=69?'여객선':t>=30&&t<=37?'어선, 예인선 등':'기타');
+async function loadLive(){
+  if(LIVE.loading) return; LIVE.loading=true; LIVE.err=null;
+  try{ const r=await fetch('data/ais_state.json?t='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error(r.status); LIVE.data=await r.json(); }
+  catch(e){ LIVE.err = location.protocol==='file:' ? 'GitHub Pages에 올린 뒤 표시됩니다. 내 컴퓨터에서 파일을 직접 열면 데이터 파일을 읽을 수 없습니다.' : '데이터 파일을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'; }
+  LIVE.loading=false; if(state.view==='live') render();
+}
+function liveVessels(){
+  const vs=Object.values((LIVE.data&&LIVE.data.vessels)||{});
+  return vs.filter(v=>!LIVE.cargoOnly || (v.ship_type>=70&&v.ship_type<=89))
+           .sort((a,b)=>(b.events?.length||0)-(a.events?.length||0) || String(b.last_seen_utc).localeCompare(String(a.last_seen_utc)));
+}
+function viewLive(){
+  if(!LIVE.data && !LIVE.err){ loadLive(); return '<div class="card">실제 AIS 데이터를 불러오는 중입니다.</div>'; }
+  if(LIVE.err) return `<div class="card"><h2>실제 AIS 대조</h2><p class="muted">${LIVE.err}</p></div>`;
+  const d=LIVE.data, vs=liveVessels();
+  const ageH = d.updated_utc ? (Date.now()-new Date(d.updated_utc).getTime())/H : null;
+  const head = `<div class="intro"><b>실제 데이터</b> 이 화면은 부산항, 광양항, 포항항, 울산항 해역의 실제 선박 AIS 신호를 30분마다 자동 수집해 보여줍니다. 선박의 항해 상태가 "묘박(정박지 대기)"이나 "계류(접안)"로 바뀐 시각을 잡아내, 작업일지에 적힌 시각과 대조하는 정산항해사의 교차검증 기능을 실제 기록으로 시연합니다.</div>
+  <div class="card" style="padding:14px 20px"><div class="row" style="align-items:center;gap:18px">
+    <div><span class="muted small">출처</span> <b>${d.source||'AISStream'}</b></div>
+    <div><span class="muted small">최종 갱신</span> <b>${d.updated_utc?kst(d.updated_utc)+' (한국시간)':'아직 수집 전'}</b></div>
+    <div><span class="muted small">수집 선박</span> <b>${Object.keys(d.vessels||{}).length}척</b></div>
+    <div class="spacer"></div>
+    <label class="small"><input type="checkbox" ${LIVE.cargoOnly?'checked':''} onchange="LIVE.cargoOnly=this.checked;render()"> 화물선, 유조선만</label>
+    <button class="btn" onclick="LIVE.data=null;render()">새로고침</button></div>
+    ${ageH!=null&&ageH>2?`<p class="small" style="margin:10px 0 0;color:var(--warn)">최근 수집이 지연되고 있어 ${kst(d.updated_utc)} 기준의 마지막 데이터를 표시합니다.</p>`:''}</div>`;
+  if(!vs.length) return head + `<div class="card"><p class="muted" style="margin:0">아직 표시할 선박이 없습니다. 첫 수집이 끝나면 여기에 나타납니다.</p></div>`;
+  const sel = vs.find(v=>v.mmsi===LIVE.sel) || vs[0];
+  const rows = vs.slice(0,40).map(v=>`<tr class="click" onclick="LIVE.sel='${v.mmsi}';LIVE.sofTime='';render()" ${v.mmsi===sel.mmsi?'style="background:#F0F6FC"':''}>
+    <td><b>${v.name||'(이름 미수신)'}</b><br><span class="small muted">MMSI ${v.mmsi}</span></td><td>${shipType(v.ship_type)}</td><td>${v.port||'-'}</td>
+    <td>${v.status===5?'<span class="badge blue">계류(접안)</span>':v.status===1?'<span class="badge warn">묘박</span>':`<span class="badge">${v.status_text||'미상'}</span>`}</td>
+    <td>${(v.events||[]).length}건</td><td class="small">${kst(v.last_seen_utc)}</td></tr>`).join('');
+  const ev = (sel.events||[]).slice().reverse();
+  const moored = (sel.events||[]).filter(e=>e.to_code===5).slice(-1)[0];
+  const anch = (sel.events||[]).filter(e=>e.to_code===1).slice(-1)[0];
+  const ref = moored || anch;
+  let cmp='';
+  if(ref){
+    const refMs=new Date(ref.time_utc).getTime();
+    if(!LIVE.sofTime){ const d0=new Date(refMs+9*H); LIVE.sofTime=d0.toISOString().slice(0,16); }
+    const sofMs=new Date(LIVE.sofTime+':00+09:00').getTime(); const diff=(sofMs-refMs)/H;
+    const flag=Math.abs(diff)>=1;
+    cmp=`<div class="card"><h2>작업일지 시각 대조 시연</h2>
+      <p class="muted small" style="margin-top:-4px">아래 칸에 작업일지에 적힌 ${moored?'접안':'정박지 도착'} 시각을 입력하면, 실제 AIS 기록과의 차이를 계산합니다. 1시간 이상 차이 나면 확인 필요로 표시합니다.</p>
+      <div class="row" style="align-items:center">
+        <div><span class="muted small">AIS 기록 (${moored?'계류 전환':'묘박 전환'})</span><br><b>${kst(ref.time_utc)}</b></div>
+        <div><span class="muted small">작업일지 시각 입력 (한국시간)</span><br><input type="datetime-local" value="${LIVE.sofTime}" onchange="LIVE.sofTime=this.value;render()" style="font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6px"></div>
+        <div><span class="muted small">차이</span><br><b>${Math.abs(diff)<0.05?'0.0':(diff>0?'+':'')+diff.toFixed(1)}시간</b></div>
+        <div>${flag?'<span class="badge warn">확인 필요</span>':'<span class="badge ok">일치</span>'}</div>
+      </div></div>`;
+  } else {
+    cmp=`<div class="card"><h2>작업일지 시각 대조 시연</h2><p class="muted small" style="margin:0">이 선박은 아직 수집 기간 중 묘박이나 계류로 바뀐 기록이 없습니다. 상태 변화 기록이 있는 선박을 선택해 주세요.</p></div>`;
+  }
+  return head + `<div class="row"><div class="col" style="flex:1.4"><div class="card"><h2>항만 해역 선박</h2><div class="tbl-wrap"><table>
+    <tr><th>선박</th><th>선종</th><th>해역</th><th>현재 상태</th><th>상태 변화</th><th>마지막 신호</th></tr>${rows}</table></div></div></div>
+    <div class="col"><div class="card"><h2>${sel.name||'선박'} 상태 변화 기록</h2>
+    <p class="small muted" style="margin-top:-4px">${shipType(sel.ship_type)}${sel.destination?' | 목적지 '+sel.destination:''}${sel.imo?' | IMO '+sel.imo:''}</p>
+    ${ev.length?`<table>${ev.map(e=>`<tr><td class="small" style="white-space:nowrap">${kst(e.time_utc)}</td><td class="small">${e.from} → <b>${e.to}</b><br><span class="muted">${e.port||''}</span></td></tr>`).join('')}</table>`:'<p class="muted small">아직 상태 변화가 기록되지 않았습니다.</p>'}
+    </div>${cmp}</div></div>
+    <div class="notice">AIS 신호는 선박이 직접 송신하는 공개 정보이며, 수신 환경에 따라 일부 선박이나 시각이 빠질 수 있습니다. 수집에 실패한 경우에는 마지막으로 수집에 성공한 데이터와 그 시각을 그대로 표시합니다.</div>`;
+}
+
+// ---------- 렌더 ----------
+function render(){
+  const titles={list:'항차 목록',settle:'항차 정산',compare:'계약서 비교',deadline:'청구 기한',live:'실제 AIS 대조'};
+  $('#title').textContent=titles[state.view];
+  $('#dataBadge').textContent = state.view==='live' ? 'AIS 실데이터, 30분 간격 자동 갱신' : '시연용 가상 데이터';
+  $('#topBadge').innerHTML = state.view==='live' ? '<span class="badge ok">실제 데이터</span>' : state.view==='settle' ? (state.approved?'<span class="badge ok">승인 완료</span>':'<span class="badge blue">정산 진행 중</span>') : '';
+  $('#view').innerHTML = {list:viewList,settle:viewSettle,compare:viewCompare,deadline:viewDeadline,live:viewLive}[state.view]();
+}
+render();
+</script>
+</body>
+</html>

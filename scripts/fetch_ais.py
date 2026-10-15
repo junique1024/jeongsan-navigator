@@ -1,0 +1,161 @@
+"""AISStream에서 국내 주요 항만 해역의 AIS 신호를 일정 시간 수신해 data/ais_state.json을 갱신한다.
+
+원칙: 수집에 성공했을 때만 파일을 덮어쓴다. 오류가 나거나 수신 메시지가 없으면
+기존 파일을 그대로 두므로, 웹페이지에는 마지막으로 성공한 데이터와 시각이 유지된다.
+"""
+import asyncio
+import datetime as dt
+import json
+import os
+import sys
+import time
+
+import websockets
+
+API_KEY = os.environ.get("AISSTREAM_API_KEY", "")
+LISTEN_SECONDS = int(os.environ.get("LISTEN_SECONDS", "150"))
+STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "ais_state.json")
+MAX_EVENTS = 30
+KEEP_DAYS = 10
+
+# 항만 해역 (위도, 경도) 남서쪽과 북동쪽 꼭짓점
+PORTS = {
+    "부산항": [[34.95, 128.70], [35.15, 129.15]],
+    "광양항": [[34.80, 127.60], [34.98, 127.85]],
+    "포항항": [[35.95, 129.33], [36.10, 129.50]],
+    "울산항": [[35.40, 129.30], [35.55, 129.45]],
+}
+
+NAV_STATUS = {
+    0: "항해 중", 1: "묘박(정박지 대기)", 2: "조종 불능", 3: "조종 제한",
+    4: "흘수 제약", 5: "계류(접안)", 6: "좌초", 7: "어로 중", 8: "범주 중",
+}
+
+
+def port_of(lat, lon):
+    for name, ((lat1, lon1), (lat2, lon2)) in PORTS.items():
+        if lat1 <= lat <= lat2 and lon1 <= lon <= lon2:
+            return name
+    return "기타 해역"
+
+
+def parse_time(s):
+    # 예: "2026-10-15 01:23:45.123456789 +0000 UTC"
+    try:
+        return dt.datetime.strptime(s[:19], "%Y-%m-%d %H:%M:%S").replace(tzinfo=dt.timezone.utc).isoformat()
+    except Exception:
+        return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+
+
+async def collect():
+    msgs = []
+    async with websockets.connect("wss://stream.aisstream.io/v0/stream", open_timeout=20) as ws:
+        await ws.send(json.dumps({
+            "APIKey": API_KEY,
+            "BoundingBoxes": list(PORTS.values()),
+            "FilterMessageTypes": ["PositionReport", "ShipStaticData"],
+        }))
+        end = time.time() + LISTEN_SECONDS
+        while True:
+            remain = end - time.time()
+            if remain <= 0:
+                break
+            try:
+                raw = await asyncio.wait_for(ws.recv(), timeout=remain)
+            except asyncio.TimeoutError:
+                break
+            try:
+                m = json.loads(raw)
+            except Exception:
+                continue
+            if "error" in m:
+                raise RuntimeError(f"AISStream 오류: {m['error']}")
+            msgs.append(m)
+    return msgs
+
+
+def update_state(state, msgs):
+    vessels = state.setdefault("vessels", {})
+    n_pos = 0
+    for m in msgs:
+        meta = m.get("MetaData", {})
+        mmsi = str(meta.get("MMSI", ""))
+        if not mmsi:
+            continue
+        v = vessels.setdefault(mmsi, {"mmsi": mmsi, "events": []})
+        name = (meta.get("ShipName") or "").strip()
+        if name:
+            v["name"] = name
+        mtype = m.get("MessageType")
+        body = m.get("Message", {}).get(mtype, {})
+        if mtype == "ShipStaticData":
+            v["ship_type"] = body.get("Type")
+            dest = (body.get("Destination") or "").strip()
+            if dest:
+                v["destination"] = dest
+            if body.get("ImoNumber"):
+                v["imo"] = body.get("ImoNumber")
+            continue
+        if mtype != "PositionReport":
+            continue
+        n_pos += 1
+        lat, lon = meta.get("latitude"), meta.get("longitude")
+        t = parse_time(meta.get("time_utc", ""))
+        status = body.get("NavigationalStatus")
+        prev = v.get("status")
+        if prev is not None and status is not None and status != prev:
+            v["events"].append({
+                "time_utc": t,
+                "from": NAV_STATUS.get(prev, f"코드 {prev}"),
+                "to": NAV_STATUS.get(status, f"코드 {status}"),
+                "to_code": status,
+                "port": port_of(lat, lon) if lat is not None else None,
+            })
+            v["events"] = v["events"][-MAX_EVENTS:]
+        if status is not None:
+            v["status"] = status
+            v["status_text"] = NAV_STATUS.get(status, f"코드 {status}")
+        v.update({"lat": lat, "lon": lon, "sog": body.get("Sog"), "last_seen_utc": t,
+                  "port": port_of(lat, lon) if lat is not None else v.get("port")})
+    # 오래 안 보인 선박 정리
+    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=KEEP_DAYS)
+    for k in list(vessels):
+        ls = vessels[k].get("last_seen_utc")
+        if ls and dt.datetime.fromisoformat(ls) < cutoff:
+            del vessels[k]
+    return n_pos
+
+
+def main():
+    if not API_KEY:
+        print("AISSTREAM_API_KEY가 없어 수집을 건너뜁니다. 기존 데이터를 유지합니다.")
+        return 0
+    try:
+        with open(STATE_PATH, encoding="utf-8") as f:
+            state = json.load(f)
+    except Exception:
+        state = {"vessels": {}}
+    try:
+        msgs = asyncio.run(collect())
+    except Exception as e:
+        print(f"수집 실패, 기존 데이터를 유지합니다: {e}")
+        return 0
+    n_pos = update_state(state, msgs)
+    if n_pos == 0:
+        print("수신한 위치 신호가 없어 기존 데이터를 유지합니다.")
+        return 0
+    now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+    state["updated_utc"] = now
+    state["source"] = "AISStream (aisstream.io)"
+    state["last_run"] = {"time_utc": now, "messages": len(msgs), "position_reports": n_pos,
+                         "listen_seconds": LISTEN_SECONDS}
+    tmp = STATE_PATH + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=1)
+    os.replace(tmp, STATE_PATH)
+    print(f"갱신 완료: 메시지 {len(msgs)}건, 위치 신호 {n_pos}건, 선박 {len(state['vessels'])}척")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
