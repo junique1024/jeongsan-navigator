@@ -1,10 +1,10 @@
 {
- "updated_utc": "2026-10-27T16:02:38+00:00",
+ "updated_utc": "2026-10-27T20:40:30+00:00",
  "source": "AISStream (aisstream.io)",
  "last_run": {
-  "time_utc": "2026-10-27T16:02:38+00:00",
-  "messages": 303,
-  "position_reports": 219,
+  "time_utc": "2026-10-27T20:40:30+00:00",
+  "messages": 333,
+  "position_reports": 240,
   "listen_seconds": 180
  },
  "vessels": {
@@ -248,10 +248,10 @@
    "name": "FAIRPLAY-92",
    "status": 8,
    "status_text": "범주 중",
-   "lat": 51.96428,
-   "lon": 4.09405,
+   "lat": 51.96427,
+   "lon": 4.09404,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:02:15+00:00",
+   "last_seen_utc": "2026-10-27T20:39:15+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "TENNESSEE_HAVEN",
@@ -356,10 +356,10 @@
    "name": "TORNADO",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.91902,
-   "lon": 4.2497,
+   "lat": 51.91901,
+   "lon": 4.24968,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:13+00:00",
+   "last_seen_utc": "2026-10-27T20:37:43+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "ROTTERDAM-TILBURG"
@@ -370,10 +370,10 @@
    "name": "SAHARA",
    "status": 15,
    "status_text": "코드 15",
-   "lat": 51.90247,
-   "lon": 4.2803,
-   "sog": 0.2,
-   "last_seen_utc": "2026-10-27T16:01:07+00:00",
+   "lat": 51.90727,
+   "lon": 4.26699,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:55+00:00",
    "port": "로테르담항",
    "ship_type": 33
   },
@@ -440,10 +440,10 @@
    "ship_type": 53,
    "status": 8,
    "status_text": "범주 중",
-   "lat": 51.88877,
-   "lon": 4.31342,
+   "lat": 51.88876,
+   "lon": 4.31346,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:22+00:00",
+   "last_seen_utc": "2026-10-27T20:38:22+00:00",
    "port": "로테르담항"
   },
   "244710256": {
@@ -481,10 +481,10 @@
    "destination": "BRIELLE  .",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89511,
+   "lat": 51.8951,
    "lon": 4.21797,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:43+00:00",
+   "last_seen_utc": "2026-10-27T20:39:23+00:00",
    "port": "로테르담항"
   },
   "244101977": {
@@ -550,10 +550,10 @@
    "name": "KRVE 38",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.88886,
-   "lon": 4.31305,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:27+00:00",
+   "lat": 51.89312,
+   "lon": 4.33926,
+   "sog": 6.9,
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
    "port": "로테르담항",
    "ship_type": 99
   },
@@ -563,10 +563,10 @@
    "name": "VLAARDINGEN",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.95786,
-   "lon": 4.0382,
+   "lat": 51.95784,
+   "lon": 4.03818,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:25+00:00",
+   "last_seen_utc": "2026-10-27T20:40:05+00:00",
    "port": "로테르담항",
    "ship_type": 99
   },
@@ -590,27 +590,12 @@
    "name": "SURVEYOR 1",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96916,
-   "lon": 4.10555,
-   "sog": 10.5,
-   "last_seen_utc": "2026-10-27T10:26:57+00:00",
+   "lat": 51.96198,
+   "lon": 4.13857,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:57+00:00",
    "port": "로테르담항",
    "ship_type": 53
-  },
-  "246351000": {
-   "mmsi": "246351000",
-   "events": [],
-   "name": "VOX MAXIMA",
-   "ship_type": 33,
-   "destination": "ID SKP",
-   "imo": 9454096,
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 1.1077,
-   "lon": 103.92854,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:32:03+00:00",
-   "port": "싱가포르항"
   },
   "246581000": {
    "mmsi": "246581000",
@@ -674,10 +659,10 @@
    "name": "RPA12",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.9612,
-   "lon": 4.08991,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-27T16:00:17+00:00",
+   "lat": 51.96123,
+   "lon": 4.08984,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:37:57+00:00",
    "port": "로테르담항",
    "ship_type": 99,
    "destination": "ROTTERDAM",
@@ -759,10 +744,10 @@
    "name": "FAIRPLAY-93",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.95943,
-   "lon": 4.0778,
+   "lat": 51.96419,
+   "lon": 4.09445,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:37+00:00",
+   "last_seen_utc": "2026-10-27T20:39:57+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "HARBOUR TUG",
@@ -776,10 +761,10 @@
    "destination": "RIJNHAVEN",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.91015,
-   "lon": 4.34421,
+   "lat": 51.91016,
+   "lon": 4.34437,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T06:59:22+00:00",
+   "last_seen_utc": "2026-10-27T20:40:18+00:00",
    "port": "로테르담항"
   },
   "244020144": {
@@ -867,10 +852,10 @@
    "name": "RVE 17",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.94897,
-   "lon": 4.16158,
-   "sog": 11.2,
-   "last_seen_utc": "2026-10-27T16:00:28+00:00",
+   "lat": 51.94932,
+   "lon": 4.14839,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:37:29+00:00",
    "port": "로테르담항",
    "ship_type": 0,
    "destination": "GEULHAVEN"
@@ -1080,10 +1065,10 @@
    "name": "EPSHIP IV",
    "status": 3,
    "status_text": "조종 제한",
-   "lat": 51.95822,
-   "lon": 4.12792,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-27T16:00:01+00:00",
+   "lat": 51.9584,
+   "lon": 4.12765,
+   "sog": 0.3,
+   "last_seen_utc": "2026-10-27T20:39:22+00:00",
    "port": "로테르담항"
   },
   "668116289": {
@@ -1107,10 +1092,10 @@
    "name": "P99",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89301,
-   "lon": 4.23058,
-   "sog": 0,
-   "last_seen_utc": "2026-10-26T06:59:57+00:00",
+   "lat": 51.88907,
+   "lon": 4.23023,
+   "sog": 0.7,
+   "last_seen_utc": "2026-10-27T20:38:47+00:00",
    "port": "로테르담항",
    "ship_type": 99
   },
@@ -1121,10 +1106,10 @@
    "ship_type": 79,
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.88215,
-   "lon": 4.26475,
+   "lat": 51.88212,
+   "lon": 4.26474,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:45+00:00",
+   "last_seen_utc": "2026-10-27T20:37:46+00:00",
    "port": "로테르담항"
   },
   "244030023": {
@@ -1133,10 +1118,10 @@
    "name": "HEBO-CAT 5",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96197,
-   "lon": 4.13839,
+   "lat": 51.96198,
+   "lon": 4.13842,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:45+00:00",
+   "last_seen_utc": "2026-10-27T20:40:16+00:00",
    "port": "로테르담항",
    "ship_type": 99,
    "destination": "OLIEBESTRIJDING"
@@ -1326,10 +1311,10 @@
    "name": "RICKY JANE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.91927,
-   "lon": 4.21,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T16:02:22+00:00",
+   "lat": 51.94862,
+   "lon": 4.16291,
+   "sog": 8.9,
+   "last_seen_utc": "2026-10-27T20:38:53+00:00",
    "port": "로테르담항",
    "ship_type": 90,
    "destination": "ROTTERDAM 7E PETROH"
@@ -1427,10 +1412,10 @@
    "name": "VB EBRO",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.96145,
-   "lon": 4.14007,
+   "lat": 51.96138,
+   "lon": 4.14012,
    "sog": 0.1,
-   "last_seen_utc": "2026-10-26T14:10:14+00:00",
+   "last_seen_utc": "2026-10-27T20:38:53+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "HARBOUR TUG",
@@ -1484,10 +1469,10 @@
    "name": "SAILING HOME",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.94174,
-   "lon": 4.03264,
+   "lat": 51.95834,
+   "lon": 3.99577,
    "sog": 0.1,
-   "last_seen_utc": "2026-10-27T10:26:55+00:00",
+   "last_seen_utc": "2026-10-27T20:39:05+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "?"
@@ -1512,10 +1497,10 @@
    "name": "BERNISSEPLUS",
    "status": 15,
    "status_text": "코드 15",
-   "lat": 51.94941,
+   "lat": 51.94938,
    "lon": 4.14913,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:29+00:00",
+   "last_seen_utc": "2026-10-27T20:39:25+00:00",
    "port": "로테르담항",
    "ship_type": 99
   },
@@ -1595,10 +1580,10 @@
    "name": "FAIRPLAY-95",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96393,
+   "lat": 51.96392,
    "lon": 4.09535,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:25:40+00:00",
+   "last_seen_utc": "2026-10-27T20:39:29+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -1788,10 +1773,10 @@
    "name": "VB ROB",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96128,
-   "lon": 4.14062,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T10:26:11+00:00",
+   "lat": 51.96117,
+   "lon": 4.14065,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:40:21+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -1803,10 +1788,10 @@
    "name": "INVOTIS V",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.8819,
+   "lat": 51.88187,
    "lon": 4.26491,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:21+00:00",
+   "last_seen_utc": "2026-10-27T20:39:21+00:00",
    "port": "로테르담항",
    "ship_type": 79
   },
@@ -1824,10 +1809,10 @@
    "name": "VB COURAGE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96793,
-   "lon": 4.06869,
-   "sog": 0.2,
-   "last_seen_utc": "2026-10-27T04:54:52+00:00",
+   "lat": 51.95126,
+   "lon": 4.14454,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:39:12+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "HARBOR TOWAGE",
@@ -1884,10 +1869,10 @@
    "imo": 9496965,
    "status": 0,
    "status_text": "항해 중",
-   "lat": 52.03064,
-   "lon": 3.87352,
-   "sog": 3.9,
-   "last_seen_utc": "2026-10-27T10:27:39+00:00",
+   "lat": 52.01871,
+   "lon": 3.87488,
+   "sog": 4,
+   "last_seen_utc": "2026-10-27T20:39:33+00:00",
    "port": "로테르담항"
   },
   "255915875": {
@@ -1896,10 +1881,10 @@
    "name": "FAIRPLAY I",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96814,
-   "lon": 4.11148,
-   "sog": 4.9,
-   "last_seen_utc": "2026-10-27T10:27:33+00:00",
+   "lat": 51.96446,
+   "lon": 4.09354,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:53+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "HARBOUR TOWAGE RDAM",
@@ -1913,9 +1898,9 @@
    "status": 0,
    "status_text": "항해 중",
    "lat": 51.96116,
-   "lon": 4.08986,
+   "lon": 4.08997,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:53:26+00:00",
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
    "port": "로테르담항"
   },
   "218031050": {
@@ -2016,10 +2001,10 @@
    "name": "SVITZER MARKEN",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96009,
-   "lon": 4.0111,
+   "lat": 51.95978,
+   "lon": 4.0731,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:55:28+00:00",
+   "last_seen_utc": "2026-10-27T20:37:49+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -2225,10 +2210,10 @@
    "name": "SEA JADE",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.97531,
-   "lon": 3.98994,
+   "lat": 51.9753,
+   "lon": 3.98998,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T01:39:22+00:00",
+   "last_seen_utc": "2026-10-27T20:39:22+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "NLRTM",
@@ -2300,10 +2285,10 @@
    "imo": 9402433,
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89104,
-   "lon": 4.30379,
-   "sog": 0,
-   "last_seen_utc": "2026-10-26T20:09:08+00:00",
+   "lat": 51.88589,
+   "lon": 4.28325,
+   "sog": 0.2,
+   "last_seen_utc": "2026-10-27T20:38:28+00:00",
    "port": "로테르담항"
   },
   "244532000": {
@@ -2739,10 +2724,10 @@
    "name": "HEBOCAT 10",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.87119,
+   "lat": 51.87118,
    "lon": 4.3108,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T15:59:36+00:00",
+   "last_seen_utc": "2026-10-27T20:38:57+00:00",
    "port": "로테르담항",
    "ship_type": 54,
    "destination": "VERKEERSBEGELEIDING"
@@ -2954,10 +2939,10 @@
    "name": "BIESBOSCH",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.96154,
-   "lon": 4.04275,
+   "lat": 51.96244,
+   "lon": 4.03901,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:24+00:00",
+   "last_seen_utc": "2026-10-27T20:38:42+00:00",
    "port": "로테르담항",
    "ship_type": 99,
    "destination": "BOTLEK"
@@ -3055,10 +3040,10 @@
    "name": "VB PUMA",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.9613,
-   "lon": 4.13428,
-   "sog": 8.6,
-   "last_seen_utc": "2026-10-27T16:00:46+00:00",
+   "lat": 51.96063,
+   "lon": 4.14188,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:40:26+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -3128,10 +3113,10 @@
    "name": "VB REBEL",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96132,
-   "lon": 4.14027,
+   "lat": 51.96134,
+   "lon": 4.14025,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:49+00:00",
+   "last_seen_utc": "2026-10-27T20:39:30+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "HARBOUR TUG",
@@ -3213,10 +3198,10 @@
    "name": "FAIRPLAY-61",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.90595,
-   "lon": 4.22619,
-   "sog": 7.8,
-   "last_seen_utc": "2026-10-27T16:01:40+00:00",
+   "lat": 51.92261,
+   "lon": 4.21725,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:02+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -3257,10 +3242,10 @@
    "name": "KLAZINA",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.92069,
-   "lon": 4.2511,
+   "lat": 51.9207,
+   "lon": 4.25117,
    "sog": 0,
-   "last_seen_utc": "2026-10-25T23:12:03+00:00",
+   "last_seen_utc": "2026-10-27T20:38:11+00:00",
    "port": "로테르담항",
    "ship_type": 37
   },
@@ -3270,10 +3255,10 @@
    "name": "SCHLOSS MAINAU",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.86676,
-   "lon": 4.32472,
+   "lat": 51.89826,
+   "lon": 4.22068,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:28:24+00:00",
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "NLRTM01202DOCKX00038"
@@ -3284,10 +3269,10 @@
    "name": "EPSHIP I",
    "status": 3,
    "status_text": "조종 제한",
-   "lat": 51.88618,
-   "lon": 4.28079,
+   "lat": 51.88617,
+   "lon": 4.28077,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:25:46+00:00",
+   "last_seen_utc": "2026-10-27T20:38:16+00:00",
    "port": "로테르담항",
    "ship_type": 33,
    "destination": "ROTTERDAM"
@@ -3298,10 +3283,10 @@
    "name": "INVOTIS VII",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.88197,
-   "lon": 4.26562,
+   "lat": 51.88171,
+   "lon": 4.26421,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:55:41+00:00",
+   "last_seen_utc": "2026-10-27T20:38:58+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "ROTTERDAM"
@@ -3941,10 +3926,10 @@
    "name": "VB BRENT",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.9676,
-   "lon": 4.12175,
-   "sog": 7.2,
-   "last_seen_utc": "2026-10-27T16:01:13+00:00",
+   "lat": 51.96395,
+   "lon": 4.07177,
+   "sog": 2.8,
+   "last_seen_utc": "2026-10-27T20:39:13+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "OFFBORSSELEBETA",
@@ -4107,10 +4092,10 @@
    "name": "JOHANNES-J",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.94818,
-   "lon": 4.13036,
+   "lat": 51.96142,
+   "lon": 4.13868,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:16+00:00",
+   "last_seen_utc": "2026-10-27T20:39:55+00:00",
    "port": "로테르담항",
    "ship_type": 52
   },
@@ -4120,10 +4105,10 @@
    "name": "VB BEAGLE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96398,
-   "lon": 4.08301,
-   "sog": 7.9,
-   "last_seen_utc": "2026-10-27T10:26:54+00:00",
+   "lat": 51.95135,
+   "lon": 4.14435,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:34+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "imo": 9816359
@@ -4134,10 +4119,10 @@
    "name": "ASSISTENT",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.9189,
-   "lon": 4.24989,
+   "lat": 51.91889,
+   "lon": 4.24987,
    "sog": 0,
-   "last_seen_utc": "2026-10-25T23:12:55+00:00",
+   "last_seen_utc": "2026-10-27T20:39:56+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "MAASSLUIS"
@@ -4405,10 +4390,10 @@
    "name": "FAIRPLAY-28",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.98144,
-   "lon": 4.07813,
-   "sog": 3.9,
-   "last_seen_utc": "2026-10-27T16:02:32+00:00",
+   "lat": 51.96407,
+   "lon": 4.0948,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:37:28+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "RTM HARBOUR TOWAGE",
@@ -4664,17 +4649,24 @@
      "to": "계류(접안)",
      "to_code": 5,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:38:27+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
     }
    ],
    "name": "DRACO (PILOT VESSEL)",
    "ship_type": 50,
    "destination": "HOEK VAN HOLLAND",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.97659,
-   "lon": 4.12543,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:43+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 52.03649,
+   "lon": 3.88284,
+   "sog": 5.5,
+   "last_seen_utc": "2026-10-27T20:38:27+00:00",
    "port": "로테르담항"
   },
   "244353000": {
@@ -4801,30 +4793,16 @@
    "destination": "ROTTERDAM",
    "imo": 9816658
   },
-  "563009210": {
-   "mmsi": "563009210",
-   "events": [],
-   "name": "NOBLE ORION TG46",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.26302,
-   "lon": 103.84428,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:54+00:00",
-   "port": "싱가포르항",
-   "ship_type": 99,
-   "imo": 9386110
-  },
   "245427000": {
    "mmsi": "245427000",
    "events": [],
    "name": "VB STINGRAY",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.9611,
-   "lon": 4.14078,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T04:54:34+00:00",
+   "lat": 51.96166,
+   "lon": 4.07662,
+   "sog": 2.1,
+   "last_seen_utc": "2026-10-27T20:40:13+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -4971,20 +4949,6 @@
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "GENT  GENT 7920"
-  },
-  "205085300": {
-   "mmsi": "205085300",
-   "events": [],
-   "name": "SOMTRANS XI",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.88991,
-   "lon": 4.31634,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:06:42+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "GENT KLUIZENDOK  DOU"
   },
   "244081000": {
    "mmsi": "244081000",
@@ -5159,21 +5123,6 @@
    "ship_type": 80,
    "destination": "ROTTERDAM CHEMIEHAVE"
   },
-  "563028460": {
-   "mmsi": "563028460",
-   "events": [],
-   "name": "SEA LONGEVITY",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.26838,
-   "lon": 103.90362,
-   "sog": 2.2,
-   "last_seen_utc": "2026-10-22T17:05:32+00:00",
-   "port": "싱가포르항",
-   "ship_type": 80,
-   "destination": "AESPA",
-   "imo": 9711092
-  },
   "314569000": {
    "mmsi": "314569000",
    "events": [],
@@ -5246,10 +5195,10 @@
    "ship_type": 79,
    "status": 15,
    "status_text": "코드 15",
-   "lat": 51.95158,
-   "lon": 4.12024,
+   "lat": 51.95157,
+   "lon": 4.12025,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:26:25+00:00",
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "로테르담항"
   },
   "244002065": {
@@ -5315,10 +5264,10 @@
    "name": "TB BUANA 1302",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 1.25059,
-   "lon": 103.87001,
-   "sog": 0.2,
-   "last_seen_utc": "2026-10-26T06:57:18+00:00",
+   "lat": 1.25129,
+   "lon": 103.86789,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:39:08+00:00",
    "port": "싱가포르항"
   },
   "244700127": {
@@ -5386,17 +5335,24 @@
      "to": "항해 중",
      "to_code": 0,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:01+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
     }
    ],
    "name": "AURA",
    "ship_type": 79,
    "destination": "ROTTERDAM",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.96762,
-   "lon": 4.13455,
-   "sog": 8,
-   "last_seen_utc": "2026-10-23T17:51:01+00:00",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.98174,
+   "lon": 3.99973,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:01+00:00",
    "port": "로테르담항"
   },
   "244820288": {
@@ -5875,10 +5831,10 @@
    "name": "CORNELIS",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.95105,
-   "lon": 3.99031,
+   "lat": 51.93868,
+   "lon": 3.98148,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:28:21+00:00",
+   "last_seen_utc": "2026-10-27T20:38:26+00:00",
    "port": "로테르담항",
    "ship_type": 33,
    "destination": "NLRTM00116DOCKX00510"
@@ -5889,10 +5845,10 @@
    "name": "FAIRPLAY-25",
    "status": 8,
    "status_text": "범주 중",
-   "lat": 51.90479,
-   "lon": 4.22668,
-   "sog": 7.6,
-   "last_seen_utc": "2026-10-27T16:00:53+00:00",
+   "lat": 51.96386,
+   "lon": 4.09575,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:37:53+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -6012,19 +5968,6 @@
    "ship_type": 33,
    "destination": "246000"
   },
-  "244740625": {
-   "mmsi": "244740625",
-   "events": [],
-   "name": "RVE 57",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.94658,
-   "lon": 4.07655,
-   "sog": 6.1,
-   "last_seen_utc": "2026-10-22T20:34:21+00:00",
-   "port": "로테르담항",
-   "ship_type": 99
-  },
   "533110714": {
    "mmsi": "533110714",
    "events": [],
@@ -6139,10 +6082,10 @@
    "name": "VB HUDSON",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89133,
-   "lon": 4.30315,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-26T23:52:08+00:00",
+   "lat": 51.88723,
+   "lon": 4.28245,
+   "sog": 0.2,
+   "last_seen_utc": "2026-10-27T20:40:07+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -6351,10 +6294,10 @@
    "name": "ROERMOND MAX",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.92447,
-   "lon": 4.22736,
-   "sog": 8.7,
-   "last_seen_utc": "2026-10-22T20:32:40+00:00",
+   "lat": 51.96782,
+   "lon": 4.13384,
+   "sog": 9,
+   "last_seen_utc": "2026-10-27T20:38:15+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "ROTTERDAM ROERMOMD R"
@@ -6365,10 +6308,10 @@
    "name": "FAIRPLAY-29",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.9449,
-   "lon": 4.16664,
-   "sog": 4,
-   "last_seen_utc": "2026-10-27T16:01:38+00:00",
+   "lat": 51.95089,
+   "lon": 4.14513,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:09+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "RTM NL",
@@ -6388,27 +6331,13 @@
    "name": "MRD RANGER",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96068,
-   "lon": 4.06224,
-   "sog": 7.8,
-   "last_seen_utc": "2026-10-27T10:25:45+00:00",
+   "lat": 51.96075,
+   "lon": 4.0905,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:05+00:00",
    "port": "로테르담항",
    "ship_type": 53,
    "destination": "ROTTERDAM"
-  },
-  "244700399": {
-   "mmsi": "244700399",
-   "events": [],
-   "name": "TIM",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.95881,
-   "lon": 4.106,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:04:45+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "ROTTERDAM DINTELHAVE"
   },
   "244650759": {
    "mmsi": "244650759",
@@ -6531,20 +6460,6 @@
    "sog": 0,
    "last_seen_utc": "2026-10-25T14:20:06+00:00",
    "port": "로테르담항"
-  },
-  "244059204": {
-   "mmsi": "244059204",
-   "events": [],
-   "name": "ALPHENAAR",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.89295,
-   "lon": 4.31637,
-   "sog": 7.2,
-   "last_seen_utc": "2026-10-22T17:06:27+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "LIGPLAATS CCT ZUID"
   },
   "244660203": {
    "mmsi": "244660203",
@@ -6730,10 +6645,10 @@
    "name": "INVOTIS III",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.9494,
-   "lon": 4.14786,
+   "lat": 51.94937,
+   "lon": 4.14787,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:47+00:00",
+   "last_seen_utc": "2026-10-27T20:39:25+00:00",
    "port": "로테르담항",
    "ship_type": 20,
    "destination": "ROTTERDAM"
@@ -6817,15 +6732,22 @@
      "to": "항해 중",
      "to_code": 0,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:35+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
     }
    ],
    "name": "CLEAN SEAS 2",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.91076,
-   "lon": 4.19328,
-   "sog": 8,
-   "last_seen_utc": "2026-10-27T16:00:12+00:00",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.88427,
+   "lon": 4.23578,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
    "port": "로테르담항",
    "ship_type": 79
   },
@@ -7501,36 +7423,6 @@
    "ship_type": 80,
    "destination": "BOTLEK"
   },
-  "219024550": {
-   "mmsi": "219024550",
-   "events": [
-    {
-     "time_utc": "2026-10-16T11:53:02+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-21T01:58:15+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "ORACLIFF",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.95599,
-   "lon": 4.12831,
-   "sog": 3.1,
-   "last_seen_utc": "2026-10-22T20:33:14+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "NL RTM",
-   "imo": 9229532
-  },
   "244000046": {
    "mmsi": "244000046",
    "events": [],
@@ -7908,29 +7800,6 @@
    "port": "로테르담항",
    "ship_type": 79
   },
-  "319288700": {
-   "mmsi": "319288700",
-   "events": [
-    {
-     "time_utc": "2026-10-22T17:05:11+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "싱가포르항"
-    }
-   ],
-   "name": "DANICA",
-   "ship_type": 37,
-   "destination": "SINGAPORE",
-   "imo": 9901582,
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.26563,
-   "lon": 103.81157,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:34:51+00:00",
-   "port": "싱가포르항"
-  },
   "244710582": {
    "mmsi": "244710582",
    "events": [
@@ -8269,10 +8138,10 @@
    "ship_type": 33,
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96306,
-   "lon": 4.03557,
+   "lat": 51.96275,
+   "lon": 4.03795,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:28:07+00:00",
+   "last_seen_utc": "2026-10-27T20:39:26+00:00",
    "port": "로테르담항"
   },
   "244710387": {
@@ -8298,15 +8167,22 @@
      "to": "계류(접안)",
      "to_code": 5,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:32+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
     }
    ],
    "name": "SAPORI",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.95838,
-   "lon": 4.10747,
-   "sog": 0,
-   "last_seen_utc": "2026-10-25T10:05:45+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.929,
+   "lon": 4.16286,
+   "sog": 8.8,
+   "last_seen_utc": "2026-10-27T20:39:32+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "HAFEN MANNESMANN"
@@ -8448,20 +8324,6 @@
    "ship_type": 80,
    "destination": "ROTTERDAM 3E PETROHA"
   },
-  "244740201": {
-   "mmsi": "244740201",
-   "events": [],
-   "name": "STRANGER",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.89884,
-   "lon": 4.29746,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:33+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "MOERDIJK"
-  },
   "245463000": {
    "mmsi": "245463000",
    "events": [],
@@ -8506,10 +8368,10 @@
    "name": "INVOTIS 9",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.88263,
+   "lat": 51.88265,
    "lon": 4.26373,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T15:59:56+00:00",
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "로테르담항",
    "ship_type": 99,
    "destination": "ROTTERDAM"
@@ -8638,10 +8500,10 @@
    "destination": "DEEND03940",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89549,
-   "lon": 4.33458,
-   "sog": 10.7,
-   "last_seen_utc": "2026-10-26T06:58:52+00:00",
+   "lat": 51.94941,
+   "lon": 4.14875,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:09+00:00",
    "port": "로테르담항"
   },
   "525601594": {
@@ -8891,10 +8753,10 @@
    "name": "FAIRPLAY-27",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89177,
-   "lon": 4.30181,
-   "sog": 1.1,
-   "last_seen_utc": "2026-10-27T16:01:39+00:00",
+   "lat": 51.89187,
+   "lon": 4.30192,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:29+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "NLRTM",
@@ -9087,10 +8949,10 @@
    "name": "SEA SOLIDARITY",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 1.2677,
-   "lon": 103.89982,
-   "sog": 4.3,
-   "last_seen_utc": "2026-10-26T23:53:05+00:00",
+   "lat": 1.24061,
+   "lon": 103.79623,
+   "sog": 5.1,
+   "last_seen_utc": "2026-10-27T20:38:56+00:00",
    "port": "싱가포르항",
    "ship_type": 80,
    "destination": "AEW",
@@ -9102,10 +8964,10 @@
    "name": "VB FURIE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.88213,
-   "lon": 4.27465,
-   "sog": 0,
-   "last_seen_utc": "2026-10-25T17:51:24+00:00",
+   "lat": 51.88358,
+   "lon": 4.27835,
+   "sog": 2.5,
+   "last_seen_utc": "2026-10-27T20:39:12+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "ROTTERDAM",
@@ -9231,43 +9093,6 @@
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "WAALHAVEN"
-  },
-  "636022981": {
-   "mmsi": "636022981",
-   "events": [
-    {
-     "time_utc": "2026-10-17T13:56:05+00:00",
-     "from": "묘박(정박지 대기)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-18T19:25:00+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-22T20:32:28+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "MAGENTA ECO",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 52.0419,
-   "lon": 3.81941,
-   "sog": 6.3,
-   "last_seen_utc": "2026-10-22T20:34:28+00:00",
-   "port": "로테르담항",
-   "ship_type": 83,
-   "destination": "NLRTM",
-   "imo": 9829722
   },
   "244670043": {
    "mmsi": "244670043",
@@ -9828,10 +9653,10 @@
    "name": "AREND",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.87999,
-   "lon": 4.27402,
+   "lat": 51.9534,
+   "lon": 4.12584,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T15:59:43+00:00",
+   "last_seen_utc": "2026-10-27T20:38:43+00:00",
    "port": "로테르담항",
    "ship_type": 52,
    "destination": "BOTLEK"
@@ -10050,27 +9875,13 @@
    "name": "AMULET",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.92779,
-   "lon": 4.19716,
-   "sog": 0,
-   "last_seen_utc": "2026-10-26T01:39:04+00:00",
+   "lat": 51.94127,
+   "lon": 4.19584,
+   "sog": 10.4,
+   "last_seen_utc": "2026-10-27T20:38:15+00:00",
    "port": "로테르담항",
    "ship_type": 89,
    "destination": "ROTTERDAM 7E PETROHA"
-  },
-  "563009220": {
-   "mmsi": "563009220",
-   "events": [],
-   "name": "NOBLE VEGA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.26282,
-   "lon": 103.8465,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:06:58+00:00",
-   "port": "싱가포르항",
-   "ship_type": 52,
-   "imo": 9386093
   },
   "244650807": {
    "mmsi": "244650807",
@@ -10120,21 +9931,6 @@
    "name": "NATHALIE",
    "ship_type": 89,
    "destination": "WAAL"
-  },
-  "305411000": {
-   "mmsi": "305411000",
-   "events": [],
-   "name": "SKOGAFOSS",
-   "ship_type": 70,
-   "destination": "NLRTM",
-   "imo": 9375252,
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.97925,
-   "lon": 4.10193,
-   "sog": 13.7,
-   "last_seen_utc": "2026-10-22T20:32:09+00:00",
-   "port": "로테르담항"
   },
   "563780000": {
    "mmsi": "563780000",
@@ -10390,20 +10186,6 @@
    "last_seen_utc": "2026-10-27T16:01:36+00:00",
    "port": "로테르담항"
   },
-  "244700617": {
-   "mmsi": "244700617",
-   "events": [],
-   "name": "RIJNWERKEN",
-   "ship_type": 0,
-   "destination": "ALPHEN",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.91954,
-   "lon": 4.2503,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:53+00:00",
-   "port": "로테르담항"
-  },
   "563057800": {
    "mmsi": "563057800",
    "events": [],
@@ -10501,18 +10283,6 @@
    "ship_type": 55,
    "destination": "ROTTERDAM",
    "imo": 8306412
-  },
-  "563038800": {
-   "mmsi": "563038800",
-   "events": [],
-   "name": "MARINE TINA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.21026,
-   "lon": 103.83021,
-   "sog": 7,
-   "last_seen_utc": "2026-10-22T17:05:02+00:00",
-   "port": "싱가포르항"
   },
   "246762000": {
    "mmsi": "246762000",
@@ -10866,10 +10636,10 @@
    "name": "STRAITS BRILLIANCE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 1.26534,
-   "lon": 103.92063,
-   "sog": 1.6,
-   "last_seen_utc": "2026-10-24T16:54:51+00:00",
+   "lat": 1.2735,
+   "lon": 103.89115,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "싱가포르항"
   },
   "244660004": {
@@ -10991,10 +10761,10 @@
    "name": "KRVE 11",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89218,
-   "lon": 4.3427,
-   "sog": 0.3,
-   "last_seen_utc": "2026-10-27T16:00:00+00:00",
+   "lat": 51.89943,
+   "lon": 4.34913,
+   "sog": 7,
+   "last_seen_utc": "2026-10-27T20:40:00+00:00",
    "port": "로테르담항",
    "ship_type": 99
   },
@@ -11042,31 +10812,24 @@
      "to": "항해 중",
      "to_code": 0,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:13+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
     }
    ],
    "name": "FIXUT MARIS",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.9144,
-   "lon": 4.18351,
-   "sog": 8.4,
-   "last_seen_utc": "2026-10-24T13:17:47+00:00",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.95078,
+   "lon": 4.07275,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:13+00:00",
    "port": "로테르담항",
    "ship_type": 79
-  },
-  "244750019": {
-   "mmsi": "244750019",
-   "events": [],
-   "name": "LIBRA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.94017,
-   "lon": 4.19351,
-   "sog": 5.8,
-   "last_seen_utc": "2026-10-22T17:05:59+00:00",
-   "port": "로테르담항",
-   "ship_type": 99,
-   "destination": "WAALHAVEN ZUID"
   },
   "244670085": {
    "mmsi": "244670085",
@@ -11198,10 +10961,10 @@
    "name": "ALBATROS",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89731,
-   "lon": 4.23206,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:03+00:00",
+   "lat": 51.86698,
+   "lon": 4.25841,
+   "sog": 11.9,
+   "last_seen_utc": "2026-10-27T20:40:07+00:00",
    "port": "로테르담항",
    "ship_type": 55
   },
@@ -11312,10 +11075,10 @@
    "name": "MARPOL 19",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87775,
-   "lon": 4.29302,
+   "lat": 51.87959,
+   "lon": 4.26804,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:09+00:00",
+   "last_seen_utc": "2026-10-27T20:40:10+00:00",
    "port": "로테르담항",
    "ship_type": 99
   },
@@ -11408,7 +11171,14 @@
    "events": [],
    "name": "WENDY DUA",
    "ship_type": 79,
-   "destination": "2E WERKHAVEN IN DE B"
+   "destination": "BOTLEK",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.88317,
+   "lon": 4.26613,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:08+00:00",
+   "port": "로테르담항"
   },
   "244010081": {
    "mmsi": "244010081",
@@ -11700,17 +11470,24 @@
      "to": "항해 중",
      "to_code": 0,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:23+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
     }
    ],
    "name": "BARENTSZZEE",
    "ship_type": 79,
    "destination": "OUDE MAAS KM 1005",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.87171,
-   "lon": 4.33068,
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.86353,
+   "lon": 4.32883,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T06:58:44+00:00",
+   "last_seen_utc": "2026-10-27T20:39:23+00:00",
    "port": "로테르담항"
   },
   "477300900": {
@@ -11723,14 +11500,22 @@
   },
   "244186831": {
    "mmsi": "244186831",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:52+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
+    }
+   ],
    "name": "SYRACUSA",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.8882,
-   "lon": 4.31762,
-   "sog": 0,
-   "last_seen_utc": "2026-10-26T01:39:21+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.88008,
+   "lon": 4.30948,
+   "sog": 0.9,
+   "last_seen_utc": "2026-10-27T20:38:52+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "ROTTERDAM 3E PETROHA"
@@ -11821,29 +11606,6 @@
    "ship_type": 90,
    "destination": "SINGAPORE",
    "imo": 1093236
-  },
-  "256929000": {
-   "mmsi": "256929000",
-   "events": [
-    {
-     "time_utc": "2026-10-16T19:41:35+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "YM SATURN",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.95463,
-   "lon": 4.07601,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:34+00:00",
-   "port": "로테르담항",
-   "ship_type": 89,
-   "destination": "NOOSL>NLRTM",
-   "imo": 9362138
   },
   "244690968": {
    "mmsi": "244690968",
@@ -12267,10 +12029,10 @@
    "name": "PELAGUS",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96757,
+   "lat": 51.96756,
    "lon": 4.04068,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:15+00:00",
+   "last_seen_utc": "2026-10-27T20:38:34+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "ROERMOND"
@@ -12414,10 +12176,10 @@
    "name": "SENDO LINER",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.94435,
-   "lon": 4.03329,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:33+00:00",
+   "lat": 51.93433,
+   "lon": 4.15005,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "로테르담항",
    "ship_type": 90,
    "destination": "HARTELHAVEN"
@@ -12507,10 +12269,10 @@
    "name": "HARINGVLIET",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96262,
-   "lon": 4.03817,
+   "lat": 51.9625,
+   "lon": 4.03788,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T23:52:08+00:00",
+   "last_seen_utc": "2026-10-27T20:39:15+00:00",
    "port": "로테르담항",
    "ship_type": 33
   },
@@ -12801,10 +12563,10 @@
    "name": "PATRIJS",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.93815,
-   "lon": 4.10032,
-   "sog": 8.9,
-   "last_seen_utc": "2026-10-26T23:51:33+00:00",
+   "lat": 51.95848,
+   "lon": 4.11272,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:40:07+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "HARTELHAVEN"
@@ -12864,10 +12626,10 @@
    "name": "VERSUTIUS",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89294,
-   "lon": 4.34155,
-   "sog": 4.5,
-   "last_seen_utc": "2026-10-27T10:27:08+00:00",
+   "lat": 51.93191,
+   "lon": 4.21833,
+   "sog": 14,
+   "last_seen_utc": "2026-10-27T20:37:58+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "ROTTERDAM",
@@ -12924,33 +12686,25 @@
      "to": "항해 중",
      "to_code": 0,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:40:00+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
     }
    ],
    "name": "MEYATI",
    "ship_type": 79,
    "destination": "ROTTERDAM HARTELHAVE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.86532,
-   "lon": 4.3178,
-   "sog": 7.5,
-   "last_seen_utc": "2026-10-24T16:56:44+00:00",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.92985,
+   "lon": 4.04301,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:00+00:00",
    "port": "로테르담항"
-  },
-  "563187800": {
-   "mmsi": "563187800",
-   "events": [],
-   "name": "PSA PHOENIX CS09",
-   "status": 8,
-   "status_text": "범주 중",
-   "lat": 1.28594,
-   "lon": 103.76051,
-   "sog": 1,
-   "last_seen_utc": "2026-10-22T17:06:44+00:00",
-   "port": "싱가포르항",
-   "ship_type": 52,
-   "destination": "SINGAPORE",
-   "imo": 9951616
   },
   "244660831": {
    "mmsi": "244660831",
@@ -13239,10 +12993,10 @@
    "name": "AMICA",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.95249,
-   "lon": 4.11881,
-   "sog": 6.9,
-   "last_seen_utc": "2026-10-25T20:46:40+00:00",
+   "lat": 51.93944,
+   "lon": 4.12821,
+   "sog": 7.4,
+   "last_seen_utc": "2026-10-27T20:39:34+00:00",
    "port": "로테르담항"
   },
   "244770901": {
@@ -13482,10 +13236,10 @@
    "name": "KRVE18",
    "status": 15,
    "status_text": "코드 15",
-   "lat": 51.96636,
-   "lon": 4.04512,
+   "lat": 51.96641,
+   "lon": 4.04518,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:54:42+00:00",
+   "last_seen_utc": "2026-10-27T20:39:01+00:00",
    "port": "로테르담항"
   },
   "205344690": {
@@ -13723,36 +13477,6 @@
    "last_seen_utc": "2026-10-27T10:26:57+00:00",
    "port": "로테르담항"
   },
-  "563021100": {
-   "mmsi": "563021100",
-   "events": [
-    {
-     "time_utc": "2026-10-21T18:14:23+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "싱가포르항"
-    },
-    {
-     "time_utc": "2026-10-22T20:34:22+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "싱가포르항"
-    }
-   ],
-   "name": "KAI EI MARU 15",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.23702,
-   "lon": 103.8981,
-   "sog": 8.6,
-   "last_seen_utc": "2026-10-22T20:34:22+00:00",
-   "port": "싱가포르항",
-   "ship_type": 80,
-   "destination": "ASPP",
-   "imo": 9812353
-  },
   "565333000": {
    "mmsi": "565333000",
    "events": [],
@@ -13793,42 +13517,6 @@
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "ROTTERDAM 1E PETROHA"
-  },
-  "205393990": {
-   "mmsi": "205393990",
-   "events": [
-    {
-     "time_utc": "2026-10-17T17:05:05+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-18T21:48:52+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-22T20:33:52+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "DIABLO",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.88052,
-   "lon": 4.23855,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:52+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "ROTTERDAM"
   },
   "211139860": {
    "mmsi": "211139860",
@@ -13964,43 +13652,6 @@
    "last_seen_utc": "2026-10-26T23:53:02+00:00",
    "port": "로테르담항",
    "ship_type": 79
-  },
-  "232044985": {
-   "mmsi": "232044985",
-   "events": [
-    {
-     "time_utc": "2026-10-20T23:22:39+00:00",
-     "from": "항해 중",
-     "to": "묘박(정박지 대기)",
-     "to_code": 1,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-21T13:11:26+00:00",
-     "from": "묘박(정박지 대기)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-22T06:04:29+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "SIR JOHN FISHER",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.8818,
-   "lon": 4.30616,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:34:34+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "NLRTM",
-   "imo": 9944297
   },
   "636026212": {
    "mmsi": "636026212",
@@ -14314,18 +13965,6 @@
    "ship_type": 79,
    "destination": "MAASVLAKTE HARTELHAV"
   },
-  "563221000": {
-   "mmsi": "563221000",
-   "events": [],
-   "name": "MARLIN SATU",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.27468,
-   "lon": 103.89127,
-   "sog": 0.9,
-   "last_seen_utc": "2026-10-22T20:34:29+00:00",
-   "port": "싱가포르항"
-  },
   "566601000": {
    "mmsi": "566601000",
    "events": [],
@@ -14390,18 +14029,25 @@
      "to": "계류(접안)",
      "to_code": 5,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:37:43+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
     }
    ],
    "name": "POR VENDO",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.96057,
-   "lon": 4.11281,
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.95821,
+   "lon": 4.1085,
    "sog": 0,
-   "last_seen_utc": "2026-10-25T10:05:43+00:00",
+   "last_seen_utc": "2026-10-27T20:38:44+00:00",
    "port": "로테르담항",
    "ship_type": 79,
-   "destination": "HAFEN SCHWELGERN"
+   "destination": "DINTELHAVEN"
   },
   "518100932": {
    "mmsi": "518100932",
@@ -14551,18 +14197,6 @@
    "ship_type": 0,
    "destination": "BOTLEK"
   },
-  "244314633": {
-   "mmsi": "244314633",
-   "events": [],
-   "name": "BLUE CHRISTINA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.91206,
-   "lon": 4.24639,
-   "sog": 6.5,
-   "last_seen_utc": "2026-10-22T20:34:18+00:00",
-   "port": "로테르담항"
-  },
   "244790048": {
    "mmsi": "244790048",
    "events": [
@@ -14607,10 +14241,10 @@
    "destination": "BOTLEK TANK TERMINAL",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.88743,
-   "lon": 4.31843,
+   "lat": 51.88739,
+   "lon": 4.31849,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:54:59+00:00",
+   "last_seen_utc": "2026-10-27T20:40:04+00:00",
    "port": "로테르담항"
   },
   "277574000": {
@@ -14943,15 +14577,22 @@
      "to": "계류(접안)",
      "to_code": 5,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:41+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
     }
    ],
    "name": "PENNSYLVANIA",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.94191,
-   "lon": 4.03271,
-   "sog": 0,
-   "last_seen_utc": "2026-10-26T20:07:13+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.97252,
+   "lon": 4.04351,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:39:41+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "DUISBURG"
@@ -15260,28 +14901,6 @@
    "sog": 0.1,
    "last_seen_utc": "2026-10-24T21:52:05+00:00",
    "port": "싱가포르항"
-  },
-  "244670258": {
-   "mmsi": "244670258",
-   "events": [
-    {
-     "time_utc": "2026-10-19T00:10:34+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "PETRAQ",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.87858,
-   "lon": 4.25002,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:32:15+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "ROTTERDAM"
   },
   "244830333": {
    "mmsi": "244830333",
@@ -15616,29 +15235,6 @@
    "last_seen_utc": "2026-10-22T23:33:35+00:00",
    "port": "로테르담항"
   },
-  "353961000": {
-   "mmsi": "353961000",
-   "events": [
-    {
-     "time_utc": "2026-10-20T12:05:04+00:00",
-     "from": "항해 중",
-     "to": "묘박(정박지 대기)",
-     "to_code": 1,
-     "port": "싱가포르항"
-    }
-   ],
-   "name": "KEN SEI",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.26427,
-   "lon": 103.87857,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:04+00:00",
-   "port": "싱가포르항",
-   "ship_type": 70,
-   "destination": "SG SIN (PEBGA)",
-   "imo": 9459620
-  },
   "564599000": {
    "mmsi": "564599000",
    "events": [],
@@ -15929,10 +15525,10 @@
    "name": "RHENUS",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.93037,
-   "lon": 4.04551,
+   "lat": 51.9304,
+   "lon": 4.04546,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T06:59:38+00:00",
+   "last_seen_utc": "2026-10-27T20:39:00+00:00",
    "port": "로테르담항",
    "ship_type": 33
   },
@@ -16150,20 +15746,6 @@
    "last_seen_utc": "2026-10-25T23:13:08+00:00",
    "port": "로테르담항"
   },
-  "244670050": {
-   "mmsi": "244670050",
-   "events": [],
-   "name": "AVALON",
-   "ship_type": 79,
-   "destination": "ANTWERPEN",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.91053,
-   "lon": 4.25153,
-   "sog": 7.6,
-   "last_seen_utc": "2026-10-22T17:06:13+00:00",
-   "port": "로테르담항"
-  },
   "624016000": {
    "mmsi": "624016000",
    "events": [],
@@ -16353,21 +15935,6 @@
    "last_seen_utc": "2026-10-26T20:09:33+00:00",
    "port": "로테르담항"
   },
-  "228499700": {
-   "mmsi": "228499700",
-   "events": [],
-   "name": "CMA CGM NOTRE DAME",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.95351,
-   "lon": 3.99327,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:11+00:00",
-   "port": "로테르담항",
-   "ship_type": 70,
-   "destination": "NLRTM",
-   "imo": 1028035
-  },
   "205578290": {
    "mmsi": "205578290",
    "events": [
@@ -16396,10 +15963,10 @@
    "name": "UK155 FRIENDSHIP",
    "status": 7,
    "status_text": "어로 중",
-   "lat": 51.85412,
-   "lon": 3.90642,
-   "sog": 3.6,
-   "last_seen_utc": "2026-10-26T23:51:39+00:00",
+   "lat": 51.85296,
+   "lon": 3.90052,
+   "sog": 2.8,
+   "last_seen_utc": "2026-10-27T20:37:28+00:00",
    "port": "로테르담항"
   },
   "258960000": {
@@ -16543,10 +16110,10 @@
    "name": "CAPE CONDOR",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.92724,
-   "lon": 4.207,
+   "lat": 51.92728,
+   "lon": 4.20697,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T23:51:26+00:00",
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "로테르담항",
    "ship_type": 70,
    "destination": "ROTTERDAM",
@@ -16754,18 +16321,6 @@
    "last_seen_utc": "2026-10-23T07:24:40+00:00",
    "port": "로테르담항"
   },
-  "563036640": {
-   "mmsi": "563036640",
-   "events": [],
-   "name": "PILOT GP03",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.25107,
-   "lon": 103.86516,
-   "sog": 21.2,
-   "last_seen_utc": "2026-10-22T20:33:03+00:00",
-   "port": "싱가포르항"
-  },
   "211626380": {
    "mmsi": "211626380",
    "events": [],
@@ -16832,10 +16387,10 @@
    "name": "YOKOHAMA PIONIER",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87985,
-   "lon": 4.30138,
+   "lat": 51.87989,
+   "lon": 4.30141,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T15:59:54+00:00",
+   "last_seen_utc": "2026-10-27T20:38:54+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "NL RTM",
@@ -16898,15 +16453,22 @@
      "to": "항해 중",
      "to_code": 0,
      "port": "싱가포르항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:38+00:00",
+     "from": "항해 중",
+     "to": "묘박(정박지 대기)",
+     "to_code": 1,
+     "port": "싱가포르항"
     }
    ],
    "name": "SEAHORSE 1",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.23796,
-   "lon": 103.69408,
-   "sog": 2,
-   "last_seen_utc": "2026-10-23T17:51:05+00:00",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.17256,
+   "lon": 103.75665,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:38+00:00",
    "port": "싱가포르항"
   },
   "563275700": {
@@ -17034,20 +16596,6 @@
    "last_seen_utc": "2026-10-26T23:51:41+00:00",
    "port": "로테르담항"
   },
-  "244670725": {
-   "mmsi": "244670725",
-   "events": [],
-   "name": "STAVORDIA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.88812,
-   "lon": 4.28258,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:04:45+00:00",
-   "port": "로테르담항",
-   "ship_type": 20,
-   "destination": "GROOT AMMERS"
-  },
   "211886790": {
    "mmsi": "211886790",
    "events": [
@@ -17076,28 +16624,6 @@
    "port": "로테르담항",
    "ship_type": 20,
    "destination": "BONN ARA PENDEL"
-  },
-  "244037416": {
-   "mmsi": "244037416",
-   "events": [
-    {
-     "time_utc": "2026-10-22T17:05:00+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "VIGILIA II",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.96183,
-   "lon": 4.10836,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:00+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "HSRTELHAVEN"
   },
   "244710321": {
    "mmsi": "244710321",
@@ -17154,21 +16680,6 @@
    "destination": "NOMON",
    "imo": 9508108
   },
-  "253476000": {
-   "mmsi": "253476000",
-   "events": [],
-   "name": "FRANCESCO DI GIORGIO",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.2792,
-   "lon": 103.88286,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:13+00:00",
-   "port": "싱가포르항",
-   "ship_type": 90,
-   "destination": "SG EASTERN ANCHORAGE",
-   "imo": 9280201
-  },
   "244028325": {
    "mmsi": "244028325",
    "events": [
@@ -17197,10 +16708,10 @@
    "name": "MERCURY",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.94096,
-   "lon": 4.0325,
+   "lat": 51.93562,
+   "lon": 4.183,
    "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:02+00:00",
+   "last_seen_utc": "2026-10-27T20:39:38+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "VOPAK TTR ROTTERDAM"
@@ -17282,10 +16793,10 @@
    "name": "MERCUUR",
    "status": 13,
    "status_text": "코드 13",
-   "lat": 51.8895,
+   "lat": 51.88949,
    "lon": 4.31297,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:25+00:00",
+   "last_seen_utc": "2026-10-27T20:39:15+00:00",
    "port": "로테르담항",
    "ship_type": 50,
    "imo": 8432974
@@ -17497,12 +17008,12 @@
    "status": 5,
    "status_text": "계류(접안)",
    "lat": 51.88462,
-   "lon": 4.29044,
+   "lon": 4.2906,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:33+00:00",
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
    "port": "로테르담항",
    "ship_type": 80,
-   "destination": "ROTTERDAM WELPLAATHA"
+   "destination": "ROTTERDAM 7E PETROHA"
   },
   "565602000": {
    "mmsi": "565602000",
@@ -17591,48 +17102,6 @@
    "destination": "SINGAPORE PEBGC",
    "imo": 9882437
   },
-  "219630000": {
-   "mmsi": "219630000",
-   "events": [
-    {
-     "time_utc": "2026-10-20T23:22:35+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    },
-    {
-     "time_utc": "2026-10-22T17:05:13+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "MARCHEN MAERSK",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.9639,
-   "lon": 4.06722,
-   "sog": 4.7,
-   "last_seen_utc": "2026-10-22T17:06:13+00:00",
-   "port": "로테르담항",
-   "ship_type": 71,
-   "destination": "DEHAM-NLRTM",
-   "imo": 9632143
-  },
-  "563042900": {
-   "mmsi": "563042900",
-   "events": [],
-   "name": "STRAITS INTEGRITY",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.26698,
-   "lon": 103.89408,
-   "sog": 0.2,
-   "last_seen_utc": "2026-10-22T20:33:11+00:00",
-   "port": "싱가포르항"
-  },
   "636025351": {
    "mmsi": "636025351",
    "events": [
@@ -17676,21 +17145,6 @@
    "sog": 0,
    "last_seen_utc": "2026-10-26T01:39:56+00:00",
    "port": "로테르담항"
-  },
-  "244870287": {
-   "mmsi": "244870287",
-   "events": [],
-   "name": "A2B FUTURE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.89186,
-   "lon": 4.3205,
-   "sog": 13.2,
-   "last_seen_utc": "2026-10-22T20:34:02+00:00",
-   "port": "로테르담항",
-   "ship_type": 71,
-   "destination": "GBTIL",
-   "imo": 9122241
   },
   "244002380": {
    "mmsi": "244002380",
@@ -17757,20 +17211,6 @@
    "ship_type": 71,
    "destination": "VNVUT>SGSIN(PEBGA)",
    "imo": 9961336
-  },
-  "244690375": {
-   "mmsi": "244690375",
-   "events": [],
-   "name": "PIZ ALPETTA",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.89251,
-   "lon": 4.33961,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:36+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "BOTLEK"
   },
   "244670393": {
    "mmsi": "244670393",
@@ -18369,10 +17809,10 @@
    "destination": "ROTTERDAM DINTELHAVE",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.94006,
-   "lon": 4.0337,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-25T10:07:51+00:00",
+   "lat": 51.95984,
+   "lon": 4.11603,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:01+00:00",
    "port": "로테르담항"
   },
   "205371190": {
@@ -18386,21 +17826,6 @@
    "sog": 8.1,
    "last_seen_utc": "2026-10-27T16:01:40+00:00",
    "port": "로테르담항"
-  },
-  "245569000": {
-   "mmsi": "245569000",
-   "events": [],
-   "name": "JAN LEENHEER",
-   "status": 3,
-   "status_text": "조종 제한",
-   "lat": 51.90617,
-   "lon": 4.26103,
-   "sog": 4.3,
-   "last_seen_utc": "2026-10-22T17:06:59+00:00",
-   "port": "로테르담항",
-   "ship_type": 52,
-   "destination": "NLRTM",
-   "imo": 6807591
   },
   "210904000": {
    "mmsi": "210904000",
@@ -18557,26 +17982,6 @@
    "destination": "ROTTERDAM",
    "imo": 9803699
   },
-  "244690604": {
-   "mmsi": "244690604",
-   "events": [
-    {
-     "time_utc": "2026-10-22T17:05:40+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "MEI",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.89709,
-   "lon": 4.32371,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:40+00:00",
-   "port": "로테르담항"
-  },
   "244006000": {
    "mmsi": "244006000",
    "events": [],
@@ -18607,21 +18012,6 @@
    "ship_type": 80,
    "destination": "ROTTERDAM",
    "imo": 9325843
-  },
-  "230662000": {
-   "mmsi": "230662000",
-   "events": [],
-   "name": "MIRVA VG",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 52.02515,
-   "lon": 3.94657,
-   "sog": 9.9,
-   "last_seen_utc": "2026-10-22T20:33:11+00:00",
-   "port": "로테르담항",
-   "ship_type": 70,
-   "destination": "NLRTM",
-   "imo": 9769116
   },
   "244670741": {
    "mmsi": "244670741",
@@ -18667,15 +18057,22 @@
      "to": "계류(접안)",
      "to_code": 5,
      "port": "로테르담항"
+    },
+    {
+     "time_utc": "2026-10-27T20:39:13+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
     }
    ],
    "name": "IMPROVISE",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.88438,
-   "lon": 4.29062,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:45+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.88737,
+   "lon": 4.30065,
+   "sog": 8,
+   "last_seen_utc": "2026-10-27T20:40:25+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "ROTTERDAM GEULHAVEN"
@@ -18892,18 +18289,6 @@
    "ship_type": 99,
    "destination": "LUDWIGSHAFEN  BASF"
   },
-  "246300000": {
-   "mmsi": "246300000",
-   "events": [],
-   "name": "MATADOR 3",
-   "status": 3,
-   "status_text": "조종 제한",
-   "lat": 51.90674,
-   "lon": 4.26002,
-   "sog": 4.3,
-   "last_seen_utc": "2026-10-22T17:07:07+00:00",
-   "port": "로테르담항"
-  },
   "636023290": {
    "mmsi": "636023290",
    "events": [],
@@ -18919,18 +18304,6 @@
    "destination": "KRPUS-NLRTM",
    "imo": 9933016
   },
-  "244690719": {
-   "mmsi": "244690719",
-   "events": [],
-   "name": "ONDERNEMING",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.90354,
-   "lon": 4.2771,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:04:27+00:00",
-   "port": "로테르담항"
-  },
   "538011658": {
    "mmsi": "538011658",
    "events": [],
@@ -18938,26 +18311,6 @@
    "ship_type": 52,
    "destination": "HAMRIYAH_PORT",
    "imo": 9651333
-  },
-  "244630606": {
-   "mmsi": "244630606",
-   "events": [
-    {
-     "time_utc": "2026-10-22T00:40:06+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "VICTORIA",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.95994,
-   "lon": 3.9955,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:07:11+00:00",
-   "port": "로테르담항"
   },
   "211234090": {
    "mmsi": "211234090",
@@ -19006,10 +18359,10 @@
    "name": "VITESSE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89352,
-   "lon": 4.33448,
-   "sog": 8.2,
-   "last_seen_utc": "2026-10-23T17:52:53+00:00",
+   "lat": 51.96022,
+   "lon": 4.15585,
+   "sog": 10.1,
+   "last_seen_utc": "2026-10-27T20:39:02+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "PRINSES ARIANEHAVEN"
@@ -19116,10 +18469,10 @@
    "name": "VOLHARDING 5",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.88679,
-   "lon": 4.32206,
+   "lat": 51.89235,
+   "lon": 4.34001,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:26:12+00:00",
+   "last_seen_utc": "2026-10-27T20:38:03+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "CARGILL BOTLEK ROTTE"
@@ -19429,18 +18782,6 @@
    "last_seen_utc": "2026-10-24T09:06:43+00:00",
    "port": "로테르담항"
   },
-  "205471190": {
-   "mmsi": "205471190",
-   "events": [],
-   "name": "VENTRANS II",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.8889,
-   "lon": 4.31734,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:04:58+00:00",
-   "port": "로테르담항"
-  },
   "248649000": {
    "mmsi": "248649000",
    "events": [],
@@ -19577,21 +18918,6 @@
    "last_seen_utc": "2026-10-26T06:59:32+00:00",
    "port": "싱가포르항"
   },
-  "228477600": {
-   "mmsi": "228477600",
-   "events": [],
-   "name": "CMA CGM PETRA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.1626,
-   "lon": 103.71059,
-   "sog": 6.5,
-   "last_seen_utc": "2026-10-22T17:06:57+00:00",
-   "port": "싱가포르항",
-   "ship_type": 75,
-   "destination": "SGSIN ASUEX > ARAF",
-   "imo": 9977701
-  },
   "244029543": {
    "mmsi": "244029543",
    "events": [],
@@ -19685,10 +19011,10 @@
    "name": "ARIES",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.93898,
-   "lon": 4.06691,
-   "sog": 5.6,
-   "last_seen_utc": "2026-10-27T15:59:42+00:00",
+   "lat": 51.96118,
+   "lon": 4.03072,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:49+00:00",
    "port": "로테르담항"
   },
   "244070846": {
@@ -19815,10 +19141,10 @@
    "name": "EDITH",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.95695,
-   "lon": 4.12683,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-27T16:00:16+00:00",
+   "lat": 51.96056,
+   "lon": 4.12369,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:17+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "MOERDIJK  MOERDIJK H"
@@ -19881,30 +19207,14 @@
    "events": [],
    "name": "FLAVA",
    "ship_type": 80,
-   "destination": "ROTTERDAM 3E PETROHA"
-  },
-  "256247000": {
-   "mmsi": "256247000",
-   "events": [
-    {
-     "time_utc": "2026-10-22T00:39:35+00:00",
-     "from": "항해 중",
-     "to": "계류(접안)",
-     "to_code": 5,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "BOYNE",
+   "destination": "ROTTERDAM 3E PETROHA",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87927,
-   "lon": 4.29858,
+   "lat": 51.88341,
+   "lon": 4.34064,
    "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:32+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "NLRTM",
-   "imo": 9369928
+   "last_seen_utc": "2026-10-27T20:40:13+00:00",
+   "port": "로테르담항"
   },
   "244820397": {
    "mmsi": "244820397",
@@ -19987,20 +19297,6 @@
    "ship_type": 80,
    "destination": "TOTAL DUISBURG  -"
   },
-  "244650489": {
-   "mmsi": "244650489",
-   "events": [],
-   "name": "INDIANA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.87961,
-   "lon": 4.24182,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:04:18+00:00",
-   "port": "로테르담항",
-   "ship_type": 79,
-   "destination": "ANTWERPEN"
-  },
   "246046000": {
    "mmsi": "246046000",
    "events": [],
@@ -20015,18 +19311,6 @@
    "ship_type": 70,
    "destination": "NLMOE/GBIMM",
    "imo": 9143415
-  },
-  "244063000": {
-   "mmsi": "244063000",
-   "events": [],
-   "name": "LECKO",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.89274,
-   "lon": 4.3088,
-   "sog": 7.4,
-   "last_seen_utc": "2026-10-22T17:06:59+00:00",
-   "port": "로테르담항"
   },
   "565587000": {
    "mmsi": "565587000",
@@ -20305,18 +19589,6 @@
    "destination": "SG AEHA",
    "imo": 9413834
   },
-  "269057129": {
-   "mmsi": "269057129",
-   "events": [],
-   "name": "LEONARDO",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.87869,
-   "lon": 4.27631,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:32:03+00:00",
-   "port": "로테르담항"
-  },
   "620999491": {
    "mmsi": "620999491",
    "events": [],
@@ -20335,38 +19607,6 @@
    "lon": 4.31011,
    "sog": 0,
    "last_seen_utc": "2026-10-25T23:11:14+00:00",
-   "port": "로테르담항"
-  },
-  "205442000": {
-   "mmsi": "205442000",
-   "events": [],
-   "name": "MINERAL INCUS",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.28133,
-   "lon": 103.92136,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:03+00:00",
-   "port": "싱가포르항"
-  },
-  "205508590": {
-   "mmsi": "205508590",
-   "events": [
-    {
-     "time_utc": "2026-10-22T17:04:53+00:00",
-     "from": "계류(접안)",
-     "to": "항해 중",
-     "to_code": 0,
-     "port": "로테르담항"
-    }
-   ],
-   "name": "MULSANNE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.87401,
-   "lon": 4.23915,
-   "sog": 7.8,
-   "last_seen_utc": "2026-10-22T17:06:54+00:00",
    "port": "로테르담항"
   },
   "566773000": {
@@ -20584,18 +19824,6 @@
    "last_seen_utc": "2026-10-25T10:06:44+00:00",
    "port": "로테르담항"
   },
-  "244620903": {
-   "mmsi": "244620903",
-   "events": [],
-   "name": "SPLENDID",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.93761,
-   "lon": 4.03816,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:59+00:00",
-   "port": "로테르담항"
-  },
   "563085890": {
    "mmsi": "563085890",
    "events": [],
@@ -20717,32 +19945,6 @@
    "last_seen_utc": "2026-10-23T01:54:13+00:00",
    "port": "싱가포르항"
   },
-  "205237290": {
-   "mmsi": "205237290",
-   "events": [],
-   "name": "PROTEUS",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.87298,
-   "lon": 4.31068,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:06:26+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "ROTTERDAM 3E PETROHA"
-  },
-  "244660711": {
-   "mmsi": "244660711",
-   "events": [],
-   "name": "TJERK-HIDDE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.90214,
-   "lon": 4.27251,
-   "sog": 4.5,
-   "last_seen_utc": "2026-10-22T17:05:29+00:00",
-   "port": "로테르담항"
-  },
   "219071000": {
    "mmsi": "219071000",
    "events": [
@@ -20831,10 +20033,10 @@
    "name": "POOLSTER",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87173,
-   "lon": 4.31044,
+   "lat": 51.87148,
+   "lon": 4.31084,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T23:52:33+00:00",
+   "last_seen_utc": "2026-10-27T20:37:37+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "VLIETHAVEN"
@@ -20928,33 +20130,6 @@
    "destination": "SG SIN",
    "imo": 9434266
   },
-  "636023015": {
-   "mmsi": "636023015",
-   "events": [],
-   "name": "SINAR SABA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.28325,
-   "lon": 103.74838,
-   "sog": 2.4,
-   "last_seen_utc": "2026-10-22T17:04:18+00:00",
-   "port": "싱가포르항",
-   "ship_type": 70,
-   "destination": "SGSIN PWBGA",
-   "imo": 9970454
-  },
-  "244140588": {
-   "mmsi": "244140588",
-   "events": [],
-   "name": "HERMAN S",
-   "status": 15,
-   "status_text": "코드 15",
-   "lat": 51.89552,
-   "lon": 4.33737,
-   "sog": 9.7,
-   "last_seen_utc": "2026-10-22T17:05:20+00:00",
-   "port": "로테르담항"
-  },
   "255805621": {
    "mmsi": "255805621",
    "events": [],
@@ -21030,17 +20205,6 @@
    "last_seen_utc": "2026-10-23T12:51:48+00:00",
    "port": "싱가포르항"
   },
-  "511102115": {
-   "mmsi": "511102115",
-   "events": [],
-   "status": 8,
-   "status_text": "범주 중",
-   "lat": 1.22647,
-   "lon": 103.90505,
-   "sog": 6.2,
-   "last_seen_utc": "2026-10-22T17:04:42+00:00",
-   "port": "싱가포르항"
-  },
   "255915684": {
    "mmsi": "255915684",
    "events": [],
@@ -21065,21 +20229,6 @@
    "last_seen_utc": "2026-10-23T17:52:54+00:00",
    "port": "싱가포르항"
   },
-  "205391000": {
-   "mmsi": "205391000",
-   "events": [],
-   "name": "MINERAL CUMULUS",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.21859,
-   "lon": 103.90911,
-   "sog": 12.1,
-   "last_seen_utc": "2026-10-22T17:04:46+00:00",
-   "port": "싱가포르항",
-   "ship_type": 70,
-   "destination": "CNYTG",
-   "imo": 9717400
-  },
   "564601000": {
    "mmsi": "564601000",
    "events": [],
@@ -21093,18 +20242,6 @@
    "lon": 103.9033,
    "sog": 0.1,
    "last_seen_utc": "2026-10-25T10:08:08+00:00",
-   "port": "싱가포르항"
-  },
-  "477125800": {
-   "mmsi": "477125800",
-   "events": [],
-   "name": "CORIO BAY",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.26834,
-   "lon": 103.89604,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:04:54+00:00",
    "port": "싱가포르항"
   },
   "257457000": {
@@ -21129,60 +20266,6 @@
    "sog": 0,
    "last_seen_utc": "2026-10-26T20:07:30+00:00",
    "port": "로테르담항"
-  },
-  "563250800": {
-   "mmsi": "563250800",
-   "events": [],
-   "name": "YM INCREMENT",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.28412,
-   "lon": 103.7601,
-   "sog": 0.6,
-   "last_seen_utc": "2026-10-22T17:05:03+00:00",
-   "port": "싱가포르항"
-  },
-  "563459000": {
-   "mmsi": "563459000",
-   "events": [],
-   "name": "VB GAMMA",
-   "ship_type": 52,
-   "destination": "SINGAPORE",
-   "imo": 9572977,
-   "status": 8,
-   "status_text": "범주 중",
-   "lat": 1.22638,
-   "lon": 103.77817,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:33:24+00:00",
-   "port": "싱가포르항"
-  },
-  "538007348": {
-   "mmsi": "538007348",
-   "events": [],
-   "name": "CS JOLA",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.28699,
-   "lon": 103.91506,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:04+00:00",
-   "port": "싱가포르항"
-  },
-  "538011878": {
-   "mmsi": "538011878",
-   "events": [],
-   "name": "BLUESHIP",
-   "ship_type": 70,
-   "destination": "SGSIN PEBGC",
-   "imo": 9454163,
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.25881,
-   "lon": 103.93935,
-   "sog": 5.4,
-   "last_seen_utc": "2026-10-22T20:33:07+00:00",
-   "port": "싱가포르항"
   },
   "205574090": {
    "mmsi": "205574090",
@@ -21222,18 +20305,6 @@
    "last_seen_utc": "2026-10-26T06:59:28+00:00",
    "port": "로테르담항"
   },
-  "244740787": {
-   "mmsi": "244740787",
-   "events": [],
-   "name": "STOLT RHINE",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.88007,
-   "lon": 4.30973,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:16+00:00",
-   "port": "로테르담항"
-  },
   "636019153": {
    "mmsi": "636019153",
    "events": [],
@@ -21249,30 +20320,6 @@
    "destination": "NL RTM",
    "imo": 9850707
   },
-  "563217100": {
-   "mmsi": "563217100",
-   "events": [],
-   "name": "WAN HAI 369",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.13583,
-   "lon": 103.7226,
-   "sog": 14,
-   "last_seen_utc": "2026-10-22T17:05:21+00:00",
-   "port": "싱가포르항"
-  },
-  "256196000": {
-   "mmsi": "256196000",
-   "events": [],
-   "name": "MRC SEDEF",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.89356,
-   "lon": 4.32305,
-   "sog": 6.4,
-   "last_seen_utc": "2026-10-22T20:32:04+00:00",
-   "port": "로테르담항"
-  },
   "211195300": {
    "mmsi": "211195300",
    "events": [],
@@ -21286,18 +20333,6 @@
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "ROTTERDAM"
-  },
-  "525300321": {
-   "mmsi": "525300321",
-   "events": [],
-   "name": "TENEO",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.25217,
-   "lon": 103.86869,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:29+00:00",
-   "port": "싱가포르항"
   },
   "244130577": {
    "mmsi": "244130577",
@@ -21364,30 +20399,6 @@
    "ship_type": 79,
    "destination": "ROTTERDAM"
   },
-  "577364000": {
-   "mmsi": "577364000",
-   "events": [],
-   "name": "HK CHALLENGER",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.28709,
-   "lon": 103.92067,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:06:33+00:00",
-   "port": "싱가포르항"
-  },
-  "205579390": {
-   "mmsi": "205579390",
-   "events": [],
-   "name": "COLIBRI",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.93985,
-   "lon": 4.03344,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:32:33+00:00",
-   "port": "로테르담항"
-  },
   "244860315": {
    "mmsi": "244860315",
    "events": [
@@ -21430,30 +20441,6 @@
    "ship_type": 89,
    "destination": "ROTTERDAM"
   },
-  "244710011": {
-   "mmsi": "244710011",
-   "events": [],
-   "name": "GREVELINGEN",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.925,
-   "lon": 4.16859,
-   "sog": 7.1,
-   "last_seen_utc": "2026-10-22T20:33:31+00:00",
-   "port": "로테르담항"
-  },
-  "246774000": {
-   "mmsi": "246774000",
-   "events": [],
-   "name": "EN AVANT 10",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.9031,
-   "lon": 4.26999,
-   "sog": 8.2,
-   "last_seen_utc": "2026-10-22T17:05:53+00:00",
-   "port": "로테르담항"
-  },
   "563315900": {
    "mmsi": "563315900",
    "events": [
@@ -21472,30 +20459,6 @@
    "lon": 103.74054,
    "sog": 0,
    "last_seen_utc": "2026-10-23T07:22:58+00:00",
-   "port": "싱가포르항"
-  },
-  "525901349": {
-   "mmsi": "525901349",
-   "events": [],
-   "name": "CRUZ",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.26443,
-   "lon": 103.90271,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:05:59+00:00",
-   "port": "싱가포르항"
-  },
-  "374898000": {
-   "mmsi": "374898000",
-   "events": [],
-   "name": "EVER BIRTH",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.19449,
-   "lon": 103.87728,
-   "sog": 11,
-   "last_seen_utc": "2026-10-22T17:06:00+00:00",
    "port": "싱가포르항"
   },
   "477160100": {
@@ -21587,45 +20550,6 @@
    "last_seen_utc": "2026-10-27T04:53:26+00:00",
    "port": "로테르담항"
   },
-  "248220000": {
-   "mmsi": "248220000",
-   "events": [],
-   "name": "MINERVA KALLIOPE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.20088,
-   "lon": 103.87638,
-   "sog": 14.1,
-   "last_seen_utc": "2026-10-22T17:06:22+00:00",
-   "port": "싱가포르항"
-  },
-  "636092827": {
-   "mmsi": "636092827",
-   "events": [],
-   "name": "AS SUSANNA",
-   "ship_type": 71,
-   "destination": "MMRGN",
-   "imo": 9410296,
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 1.27507,
-   "lon": 103.7592,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:06:58+00:00",
-   "port": "싱가포르항"
-  },
-  "566746000": {
-   "mmsi": "566746000",
-   "events": [],
-   "name": "NEPAMORA",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.24636,
-   "lon": 103.91388,
-   "sog": 6.9,
-   "last_seen_utc": "2026-10-22T17:06:27+00:00",
-   "port": "싱가포르항"
-  },
   "244615899": {
    "mmsi": "244615899",
    "events": [],
@@ -21663,30 +20587,6 @@
    "destination": "NLRTM",
    "imo": 9527776
   },
-  "235116011": {
-   "mmsi": "235116011",
-   "events": [],
-   "name": "FORTH WARRIOR",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.85185,
-   "lon": 3.8969,
-   "sog": 5.7,
-   "last_seen_utc": "2026-10-22T17:06:36+00:00",
-   "port": "로테르담항"
-  },
-  "205571490": {
-   "mmsi": "205571490",
-   "events": [],
-   "name": "TE FITI",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.93447,
-   "lon": 4.0473,
-   "sog": 3.4,
-   "last_seen_utc": "2026-10-22T17:06:46+00:00",
-   "port": "로테르담항"
-  },
   "249209000": {
    "mmsi": "249209000",
    "events": [
@@ -21716,18 +20616,6 @@
    "ship_type": 89,
    "destination": "BEGNE>NLRTM",
    "imo": 9393395
-  },
-  "212939000": {
-   "mmsi": "212939000",
-   "events": [],
-   "name": "ANL HEDLAND TRADER",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.25768,
-   "lon": 103.86595,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T17:07:12+00:00",
-   "port": "싱가포르항"
   },
   "351577000": {
    "mmsi": "351577000",
@@ -21873,18 +20761,6 @@
    "last_seen_utc": "2026-10-27T10:28:17+00:00",
    "port": "로테르담항"
   },
-  "538003747": {
-   "mmsi": "538003747",
-   "events": [],
-   "name": "GLEAMSTAR",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.22484,
-   "lon": 103.9088,
-   "sog": 7.9,
-   "last_seen_utc": "2026-10-22T20:33:54+00:00",
-   "port": "싱가포르항"
-  },
   "226016230": {
    "mmsi": "226016230",
    "events": [
@@ -21965,33 +20841,6 @@
    "destination": "NLRTM",
    "imo": 9370288
   },
-  "563285600": {
-   "mmsi": "563285600",
-   "events": [],
-   "name": "SEASPAN BELLWETHER",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.20244,
-   "lon": 103.87404,
-   "sog": 9.5,
-   "last_seen_utc": "2026-10-22T20:33:48+00:00",
-   "port": "싱가포르항"
-  },
-  "352165000": {
-   "mmsi": "352165000",
-   "events": [],
-   "name": "HOSEI FORTUNE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.26443,
-   "lon": 103.87708,
-   "sog": 1.7,
-   "last_seen_utc": "2026-10-22T20:33:33+00:00",
-   "port": "싱가포르항",
-   "ship_type": 70,
-   "destination": "SG SIN",
-   "imo": 9542879
-  },
   "636024658": {
    "mmsi": "636024658",
    "events": [
@@ -22015,18 +20864,6 @@
    "destination": "SGSIN",
    "imo": 9964285
   },
-  "636016775": {
-   "mmsi": "636016775",
-   "events": [],
-   "name": "MSC CHERYL III",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.23979,
-   "lon": 103.9506,
-   "sog": 9.6,
-   "last_seen_utc": "2026-10-22T20:34:38+00:00",
-   "port": "싱가포르항"
-  },
   "636019172": {
    "mmsi": "636019172",
    "events": [
@@ -22049,42 +20886,6 @@
    "sog": 0,
    "last_seen_utc": "2026-10-26T14:11:05+00:00",
    "port": "로테르담항"
-  },
-  "373142000": {
-   "mmsi": "373142000",
-   "events": [],
-   "name": "GOLDEN FLAME",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.25487,
-   "lon": 103.88323,
-   "sog": 0.2,
-   "last_seen_utc": "2026-10-22T20:32:47+00:00",
-   "port": "싱가포르항"
-  },
-  "403096001": {
-   "mmsi": "403096001",
-   "events": [],
-   "name": "ISRAA",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.24286,
-   "lon": 103.79613,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-22T20:32:48+00:00",
-   "port": "싱가포르항"
-  },
-  "538006279": {
-   "mmsi": "538006279",
-   "events": [],
-   "name": "SAN FRANCISCO",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.22308,
-   "lon": 103.92926,
-   "sog": 2.5,
-   "last_seen_utc": "2026-10-22T20:33:52+00:00",
-   "port": "싱가포르항"
   },
   "244700065": {
    "mmsi": "244700065",
@@ -22162,30 +20963,6 @@
    "ship_type": 80,
    "destination": "BUITENHAVEN ZEEBRUGG"
   },
-  "269057592": {
-   "mmsi": "269057592",
-   "events": [],
-   "name": "RPG STUTTGART",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.94248,
-   "lon": 4.1863,
-   "sog": 7.4,
-   "last_seen_utc": "2026-10-22T20:34:07+00:00",
-   "port": "로테르담항"
-  },
-  "241255000": {
-   "mmsi": "241255000",
-   "events": [],
-   "name": "MARAN CLEO",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.2374,
-   "lon": 103.885,
-   "sog": 0.3,
-   "last_seen_utc": "2026-10-22T20:33:00+00:00",
-   "port": "싱가포르항"
-  },
   "255916524": {
    "mmsi": "255916524",
    "events": [
@@ -22214,32 +20991,6 @@
    "lon": 4.06462,
    "sog": 11.8,
    "last_seen_utc": "2026-10-25T05:13:56+00:00",
-   "port": "로테르담항"
-  },
-  "244780045": {
-   "mmsi": "244780045",
-   "events": [],
-   "name": "ZEELAND",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.90637,
-   "lon": 4.22517,
-   "sog": 9,
-   "last_seen_utc": "2026-10-22T20:33:10+00:00",
-   "port": "로테르담항",
-   "ship_type": 80,
-   "destination": "ROTTERDAM BUNKERS"
-  },
-  "244006327": {
-   "mmsi": "244006327",
-   "events": [],
-   "name": "AIMEE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.91498,
-   "lon": 4.21159,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:34:11+00:00",
    "port": "로테르담항"
   },
   "538005187": {
@@ -22271,30 +21022,6 @@
    "sog": 8.5,
    "last_seen_utc": "2026-10-26T14:11:54+00:00",
    "port": "로테르담항"
-  },
-  "538012095": {
-   "mmsi": "538012095",
-   "events": [],
-   "name": "PACIFIC ENDEAVOUR",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.25152,
-   "lon": 103.87353,
-   "sog": 0.3,
-   "last_seen_utc": "2026-10-22T20:33:13+00:00",
-   "port": "싱가포르항"
-  },
-  "370219000": {
-   "mmsi": "370219000",
-   "events": [],
-   "name": "GAS QUANTUM",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.18359,
-   "lon": 103.7596,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-22T20:33:14+00:00",
-   "port": "싱가포르항"
   },
   "275510000": {
    "mmsi": "275510000",
@@ -22492,30 +21219,6 @@
    "last_seen_utc": "2026-10-24T19:25:38+00:00",
    "port": "로테르담항"
   },
-  "244820290": {
-   "mmsi": "244820290",
-   "events": [],
-   "name": "MART",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.91127,
-   "lon": 4.2536,
-   "sog": 10.5,
-   "last_seen_utc": "2026-10-22T20:34:21+00:00",
-   "port": "로테르담항"
-  },
-  "210008000": {
-   "mmsi": "210008000",
-   "events": [],
-   "name": "JORK RULER",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.99473,
-   "lon": 4.0294,
-   "sog": 14.5,
-   "last_seen_utc": "2026-10-22T20:34:28+00:00",
-   "port": "로테르담항"
-  },
   "244180739": {
    "mmsi": "244180739",
    "events": [],
@@ -22566,18 +21269,6 @@
    "sog": 0,
    "last_seen_utc": "2026-10-22T23:33:45+00:00",
    "port": "로테르담항"
-  },
-  "352004626": {
-   "mmsi": "352004626",
-   "events": [],
-   "name": "TONG YUN 17",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.27981,
-   "lon": 103.89004,
-   "sog": 0,
-   "last_seen_utc": "2026-10-22T20:34:53+00:00",
-   "port": "싱가포르항"
   },
   "205580490": {
    "mmsi": "205580490",
@@ -24515,10 +23206,10 @@
    "name": "GLORIA",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 1.26568,
-   "lon": 103.90113,
-   "sog": 0,
-   "last_seen_utc": "2026-10-25T10:06:18+00:00",
+   "lat": 1.27447,
+   "lon": 103.92801,
+   "sog": 6.6,
+   "last_seen_utc": "2026-10-27T20:40:05+00:00",
    "port": "싱가포르항"
   },
   "219647000": {
@@ -25270,10 +23961,10 @@
    "name": "AARBURG",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.86562,
-   "lon": 4.26972,
-   "sog": 8.8,
-   "last_seen_utc": "2026-10-27T15:59:42+00:00",
+   "lat": 51.94418,
+   "lon": 4.03047,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:31+00:00",
    "port": "로테르담항",
    "ship_type": 79,
    "destination": "ROTTERDAM"
@@ -25636,14 +24327,22 @@
   },
   "246824000": {
    "mmsi": "246824000",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:39:36+00:00",
+     "from": "묘박(정박지 대기)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
+    }
+   ],
    "name": "FINNBORG",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 51.93571,
-   "lon": 3.71666,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T16:02:11+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.93195,
+   "lon": 3.71261,
+   "sog": 1.3,
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "로테르담항",
    "ship_type": 70,
    "destination": "NLRTM",
@@ -26702,17 +25401,25 @@
   },
   "205415190": {
    "mmsi": "205415190",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:23+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
+    }
+   ],
    "name": "THEODELA",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.86668,
-   "lon": 4.29839,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T10:27:33+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.86373,
+   "lon": 4.33437,
+   "sog": 7.2,
+   "last_seen_utc": "2026-10-27T20:38:23+00:00",
    "port": "로테르담항",
    "ship_type": 80,
-   "destination": "LIGPLAATS HARTELHAV"
+   "destination": "GODORF"
   },
   "525109021": {
    "mmsi": "525109021",
@@ -26921,14 +25628,22 @@
   },
   "636019990": {
    "mmsi": "636019990",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:45+00:00",
+     "from": "항해 중",
+     "to": "묘박(정박지 대기)",
+     "to_code": 1,
+     "port": "싱가포르항"
+    }
+   ],
    "name": "SOLAR TINE",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 1.19764,
-   "lon": 103.85063,
-   "sog": 15.8,
-   "last_seen_utc": "2026-10-23T23:59:58+00:00",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.21543,
+   "lon": 103.82531,
+   "sog": 0.5,
+   "last_seen_utc": "2026-10-27T20:38:45+00:00",
    "port": "싱가포르항"
   },
   "525022169": {
@@ -27452,7 +26167,14 @@
    "name": "SCANDIA SEAWAYS",
    "ship_type": 70,
    "destination": "RTM-IMM-RTM",
-   "imo": 9864681
+   "imo": 9864681,
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 52.00444,
+   "lon": 3.99944,
+   "sog": 19.9,
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
+   "port": "로테르담항"
   },
   "538011722": {
    "mmsi": "538011722",
@@ -27886,11 +26608,13 @@
    "name": "AVISO II",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.88413,
-   "lon": 4.30656,
+   "lat": 51.88411,
+   "lon": 4.30657,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:26+00:00",
-   "port": "로테르담항"
+   "last_seen_utc": "2026-10-27T20:38:15+00:00",
+   "port": "로테르담항",
+   "ship_type": 80,
+   "destination": "BOTLEK"
   },
   "574003580": {
    "mmsi": "574003580",
@@ -27964,9 +26688,9 @@
    "status": 0,
    "status_text": "항해 중",
    "lat": 51.96243,
-   "lon": 4.13775,
+   "lon": 4.13786,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T15:59:54+00:00",
+   "last_seen_utc": "2026-10-27T20:40:03+00:00",
    "port": "로테르담항",
    "ship_type": 40
   },
@@ -29285,10 +28009,10 @@
    "name": "SVEN D",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.97343,
+   "lat": 51.97345,
    "lon": 4.03952,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:37+00:00",
+   "last_seen_utc": "2026-10-27T20:39:37+00:00",
    "port": "로테르담항",
    "ship_type": 71,
    "destination": "NLRTM",
@@ -29415,10 +28139,10 @@
    "name": "H7 SFC1",
    "status": 1,
    "status_text": "묘박(정박지 대기)",
-   "lat": 1.27817,
-   "lon": 103.90215,
+   "lat": 1.27763,
+   "lon": 103.90065,
    "sog": 0,
-   "last_seen_utc": "2026-10-24T16:55:20+00:00",
+   "last_seen_utc": "2026-10-27T20:40:20+00:00",
    "port": "싱가포르항"
   },
   "563233500": {
@@ -29776,10 +28500,10 @@
    "name": "CAPIBARA",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87976,
-   "lon": 4.26883,
+   "lat": 51.88834,
+   "lon": 4.28341,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:43+00:00",
+   "last_seen_utc": "2026-10-27T20:38:04+00:00",
    "port": "로테르담항"
   },
   "211689390": {
@@ -30023,9 +28747,9 @@
    "status": 5,
    "status_text": "계류(접안)",
    "lat": 51.86676,
-   "lon": 4.29572,
+   "lon": 4.29571,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T01:39:05+00:00",
+   "last_seen_utc": "2026-10-27T20:39:04+00:00",
    "port": "로테르담항",
    "ship_type": 89,
    "destination": "AMSTERDAM AMERIKAHAV"
@@ -30284,7 +29008,14 @@
    "name": "ELISABETH",
    "ship_type": 82,
    "destination": "AESPA",
-   "imo": 1078509
+   "imo": 1078509,
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.29064,
+   "lon": 103.92148,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:14+00:00",
+   "port": "싱가포르항"
   },
   "563085720": {
    "mmsi": "563085720",
@@ -30522,10 +29253,10 @@
    "name": "MARLINA",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.85512,
-   "lon": 4.33639,
+   "lat": 51.85504,
+   "lon": 4.33641,
    "sog": 0.2,
-   "last_seen_utc": "2026-10-27T16:02:17+00:00",
+   "last_seen_utc": "2026-10-27T20:40:18+00:00",
    "port": "로테르담항",
    "ship_type": 69,
    "destination": "SPIJKENISSE"
@@ -31213,14 +29944,22 @@
   },
   "244670320": {
    "mmsi": "244670320",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:56+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
+    }
+   ],
    "name": "CANDESSO",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.85563,
-   "lon": 4.34291,
-   "sog": 6.5,
-   "last_seen_utc": "2026-10-25T05:14:37+00:00",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.96045,
+   "lon": 4.1132,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:56+00:00",
    "port": "로테르담항"
   },
   "258096000": {
@@ -31273,14 +30012,22 @@
   },
   "636015407": {
    "mmsi": "636015407",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:37:35+00:00",
+     "from": "묘박(정박지 대기)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "싱가포르항"
+    }
+   ],
    "name": "NAVE ANDROMEDA",
-   "status": 1,
-   "status_text": "묘박(정박지 대기)",
-   "lat": 1.21771,
-   "lon": 103.80696,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-25T05:14:19+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.24232,
+   "lon": 103.78231,
+   "sog": 6.2,
+   "last_seen_utc": "2026-10-27T20:37:35+00:00",
    "port": "싱가포르항"
   },
   "205549490": {
@@ -31377,15 +30124,25 @@
   },
   "244620859": {
    "mmsi": "244620859",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:05+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
+    }
+   ],
    "name": "ALFA GRANDE",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.96122,
-   "lon": 4.11097,
-   "sog": 0,
-   "last_seen_utc": "2026-10-25T05:15:10+00:00",
-   "port": "로테르담항"
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.8974,
+   "lon": 4.28927,
+   "sog": 8,
+   "last_seen_utc": "2026-10-27T20:38:05+00:00",
+   "port": "로테르담항",
+   "ship_type": 79,
+   "destination": "MOERDIJK"
   },
   "636014043": {
    "mmsi": "636014043",
@@ -31579,9 +30336,9 @@
    "status": 5,
    "status_text": "계류(접안)",
    "lat": 51.88007,
-   "lon": 4.27329,
+   "lon": 4.27326,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T23:51:29+00:00",
+   "last_seen_utc": "2026-10-27T20:40:21+00:00",
    "port": "로테르담항"
   },
   "244050206": {
@@ -31984,10 +30741,10 @@
    "name": "X-PRESS GODAVARI",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.96243,
-   "lon": 4.05661,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T04:53:55+00:00",
+   "lat": 51.96206,
+   "lon": 4.06305,
+   "sog": 4.6,
+   "last_seen_utc": "2026-10-27T20:39:12+00:00",
    "port": "로테르담항"
   },
   "538002982": {
@@ -32833,10 +31590,10 @@
    "name": "ALLEGRA",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.91814,
-   "lon": 4.21146,
+   "lat": 51.91821,
+   "lon": 4.21141,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T06:57:43+00:00",
+   "last_seen_utc": "2026-10-27T20:38:37+00:00",
    "port": "로테르담항",
    "ship_type": 89,
    "destination": "NLRTM",
@@ -33154,7 +31911,14 @@
    "name": "EVER GIVEN",
    "ship_type": 71,
    "destination": "SGSIN PWBGA",
-   "imo": 9811000
+   "imo": 9811000,
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.20512,
+   "lon": 103.80658,
+   "sog": 7.2,
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
+   "port": "싱가포르항"
   },
   "636024867": {
    "mmsi": "636024867",
@@ -33185,10 +31949,10 @@
    "name": "HAFNIA EXPERIENCE",
    "status": 1,
    "status_text": "묘박(정박지 대기)",
-   "lat": 1.26403,
-   "lon": 103.90332,
+   "lat": 1.26265,
+   "lon": 103.89988,
    "sog": 0,
-   "last_seen_utc": "2026-10-25T20:44:49+00:00",
+   "last_seen_utc": "2026-10-27T20:39:05+00:00",
    "port": "싱가포르항"
   },
   "563230300": {
@@ -34330,10 +33094,10 @@
    "name": "EXPEDITION",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87189,
-   "lon": 4.31253,
+   "lat": 51.87184,
+   "lon": 4.31237,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T20:07:25+00:00",
+   "last_seen_utc": "2026-10-27T20:40:25+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "ROTTERDAM BOTLEK  VO"
@@ -34577,10 +33341,10 @@
    "name": "ADJA-B",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.89743,
-   "lon": 4.32366,
+   "lat": 51.8974,
+   "lon": 4.32368,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:39+00:00",
+   "last_seen_utc": "2026-10-27T20:39:58+00:00",
    "port": "로테르담항",
    "ship_type": 79
   },
@@ -34769,10 +33533,10 @@
    "destination": "YANGTZEKANAAL",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.97168,
-   "lon": 4.04298,
-   "sog": 2.1,
-   "last_seen_utc": "2026-10-27T04:54:58+00:00",
+   "lat": 51.96688,
+   "lon": 4.04387,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:38:47+00:00",
    "port": "로테르담항"
   },
   "244770674": {
@@ -34802,9 +33566,9 @@
    "status": 5,
    "status_text": "계류(접안)",
    "lat": 51.87803,
-   "lon": 4.29217,
+   "lon": 4.29214,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:53:02+00:00",
+   "last_seen_utc": "2026-10-27T20:38:02+00:00",
    "port": "로테르담항",
    "ship_type": 80,
    "destination": "NLBOT",
@@ -34856,10 +33620,10 @@
    "name": "CSCL ARCTIC OCEAN",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.9743,
-   "lon": 4.03522,
-   "sog": 0.2,
-   "last_seen_utc": "2026-10-27T04:54:36+00:00",
+   "lat": 51.97433,
+   "lon": 4.03513,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
    "port": "로테르담항"
   },
   "257895000": {
@@ -35002,11 +33766,13 @@
    "name": "LEENDERT",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.87936,
-   "lon": 4.248,
+   "lat": 51.87994,
+   "lon": 4.24665,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T15:59:39+00:00",
-   "port": "로테르담항"
+   "last_seen_utc": "2026-10-27T20:39:39+00:00",
+   "port": "로테르담항",
+   "ship_type": 90,
+   "destination": "STANDAARDBUITEN"
   },
   "636023877": {
    "mmsi": "636023877",
@@ -35132,10 +33898,10 @@
    "name": "SOMBRA",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.96874,
-   "lon": 4.12315,
-   "sog": 7.7,
-   "last_seen_utc": "2026-10-27T16:02:22+00:00",
+   "lat": 51.895,
+   "lon": 4.30442,
+   "sog": 5.2,
+   "last_seen_utc": "2026-10-27T20:40:25+00:00",
    "port": "로테르담항",
    "ship_type": 79
   },
@@ -35530,10 +34296,10 @@
    "name": "ECO PAMPERO",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.99922,
-   "lon": 3.89467,
-   "sog": 8.4,
-   "last_seen_utc": "2026-10-26T20:09:47+00:00",
+   "lat": 51.95088,
+   "lon": 3.99163,
+   "sog": 1.2,
+   "last_seen_utc": "2026-10-27T20:40:11+00:00",
    "port": "로테르담항",
    "ship_type": 70,
    "destination": "NLRTM",
@@ -35571,10 +34337,10 @@
    "name": "DB ALBATROS",
    "status": 12,
    "status_text": "코드 12",
-   "lat": 51.87987,
-   "lon": 4.27418,
+   "lat": 51.89202,
+   "lon": 4.27356,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:01:45+00:00",
+   "last_seen_utc": "2026-10-27T20:37:55+00:00",
    "port": "로테르담항",
    "ship_type": 99,
    "destination": "HAVENWERK"
@@ -35740,10 +34506,10 @@
    "name": "AMER",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.95302,
-   "lon": 4.13186,
+   "lat": 51.95301,
+   "lon": 4.13184,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:02:27+00:00",
+   "last_seen_utc": "2026-10-27T20:40:16+00:00",
    "port": "로테르담항"
   },
   "563257700": {
@@ -35815,7 +34581,9 @@
    "lon": 4.31684,
    "sog": 0,
    "last_seen_utc": "2026-10-26T23:50:26+00:00",
-   "port": "로테르담항"
+   "port": "로테르담항",
+   "ship_type": 89,
+   "destination": "BOTLEK NLBOT"
   },
   "255801940": {
    "mmsi": "255801940",
@@ -35835,7 +34603,10 @@
    "lon": 4.07033,
    "sog": 0,
    "last_seen_utc": "2026-10-27T15:59:40+00:00",
-   "port": "로테르담항"
+   "port": "로테르담항",
+   "ship_type": 70,
+   "destination": "NLDDE",
+   "imo": 9252802
   },
   "563053000": {
    "mmsi": "563053000",
@@ -36068,7 +34839,14 @@
    "mmsi": "244730347",
    "events": [],
    "name": "SJORS B",
-   "ship_type": 79
+   "ship_type": 79,
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.88023,
+   "lon": 4.24578,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:14+00:00",
+   "port": "로테르담항"
   },
   "352006237": {
    "mmsi": "352006237",
@@ -36135,7 +34913,7 @@
    "events": [],
    "name": "CMA CGM B FRANKLIN",
    "ship_type": 71,
-   "destination": "CNSHK > SGSIN",
+   "destination": "SGSIN > DJJIB",
    "imo": 9706891,
    "status": 5,
    "status_text": "계류(접안)",
@@ -36250,10 +35028,10 @@
    "name": "KOTA ANGGUN",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 1.26232,
-   "lon": 103.83782,
+   "lat": 1.26245,
+   "lon": 103.8378,
    "sog": 0,
-   "last_seen_utc": "2026-10-26T23:53:03+00:00",
+   "last_seen_utc": "2026-10-27T20:38:03+00:00",
    "port": "싱가포르항"
   },
   "244740080": {
@@ -36262,10 +35040,10 @@
    "name": "AHOY 50",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.92784,
-   "lon": 4.20488,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:37+00:00",
+   "lat": 51.8952,
+   "lon": 4.30301,
+   "sog": 5.3,
+   "last_seen_utc": "2026-10-27T20:39:35+00:00",
    "port": "로테르담항",
    "ship_type": 33,
    "destination": "DORDRECHT"
@@ -36292,7 +35070,10 @@
    "lon": 103.79702,
    "sog": 0.1,
    "last_seen_utc": "2026-10-27T04:52:47+00:00",
-   "port": "싱가포르항"
+   "port": "싱가포르항",
+   "ship_type": 80,
+   "destination": "SG PEBGC",
+   "imo": 1055478
   },
   "244650593": {
    "mmsi": "244650593",
@@ -36346,14 +35127,22 @@
   },
   "240547000": {
    "mmsi": "240547000",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:40:25+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
+    }
+   ],
    "name": "PROMITHEAS",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.96852,
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.96849,
    "lon": 4.06956,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:55:00+00:00",
+   "last_seen_utc": "2026-10-27T20:40:25+00:00",
    "port": "로테르담항"
   },
   "245617000": {
@@ -36526,10 +35315,10 @@
    "name": "CALIFORNIA HIGHWAY",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 1.24178,
-   "lon": 103.94248,
-   "sog": 6.9,
-   "last_seen_utc": "2026-10-27T04:54:06+00:00",
+   "lat": 1.24038,
+   "lon": 103.86805,
+   "sog": 5.1,
+   "last_seen_utc": "2026-10-27T20:40:05+00:00",
    "port": "싱가포르항"
   },
   "211500430": {
@@ -36542,7 +35331,9 @@
    "lon": 4.29583,
    "sog": 0,
    "last_seen_utc": "2026-10-27T04:54:10+00:00",
-   "port": "로테르담항"
+   "port": "로테르담항",
+   "ship_type": 80,
+   "destination": "ROTTERDAM"
   },
   "235106484": {
    "mmsi": "235106484",
@@ -36574,10 +35365,10 @@
    "name": "APOTHEOSE",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.92716,
-   "lon": 4.20586,
-   "sog": 0.1,
-   "last_seen_utc": "2026-10-27T16:01:33+00:00",
+   "lat": 51.88596,
+   "lon": 4.29705,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:54+00:00",
    "port": "로테르담항"
   },
   "563120800": {
@@ -36628,10 +35419,10 @@
    "name": "RVE 46",
    "status": 15,
    "status_text": "코드 15",
-   "lat": 51.88922,
-   "lon": 4.31293,
+   "lat": 51.88551,
+   "lon": 4.28221,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T04:54:50+00:00",
+   "last_seen_utc": "2026-10-27T20:37:33+00:00",
    "port": "로테르담항"
   },
   "352090000": {
@@ -36723,10 +35514,10 @@
    "name": "AGNES ESSBERGER",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.87593,
-   "lon": 4.27367,
+   "lat": 51.87598,
+   "lon": 4.27366,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T10:26:37+00:00",
+   "last_seen_utc": "2026-10-27T20:38:44+00:00",
    "port": "로테르담항"
   },
   "305554000": {
@@ -36815,14 +35606,22 @@
   },
   "247439300": {
    "mmsi": "247439300",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:28+00:00",
+     "from": "항해 중",
+     "to": "계류(접안)",
+     "to_code": 5,
+     "port": "로테르담항"
+    }
+   ],
    "name": "LORD LUPO",
-   "status": 0,
-   "status_text": "항해 중",
-   "lat": 51.99349,
-   "lon": 4.01602,
-   "sog": 10.2,
-   "last_seen_utc": "2026-10-27T10:27:39+00:00",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.8872,
+   "lon": 4.31061,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:28+00:00",
    "port": "로테르담항"
   },
   "244700535": {
@@ -36905,14 +35704,22 @@
   },
   "247433300": {
    "mmsi": "247433300",
-   "events": [],
+   "events": [
+    {
+     "time_utc": "2026-10-27T20:38:00+00:00",
+     "from": "계류(접안)",
+     "to": "항해 중",
+     "to_code": 0,
+     "port": "로테르담항"
+    }
+   ],
    "name": "ERICUSA M",
-   "status": 5,
-   "status_text": "계류(접안)",
-   "lat": 51.95212,
-   "lon": 4.08873,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T10:26:38+00:00",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 52.03712,
+   "lon": 3.8813,
+   "sog": 4.4,
+   "last_seen_utc": "2026-10-27T20:39:33+00:00",
    "port": "로테르담항"
   },
   "304707000": {
@@ -36925,7 +35732,10 @@
    "lon": 3.71285,
    "sog": 0,
    "last_seen_utc": "2026-10-27T10:26:41+00:00",
-   "port": "로테르담항"
+   "port": "로테르담항",
+   "ship_type": 70,
+   "destination": "NLRTM",
+   "imo": 9978901
   },
   "636023629": {
    "mmsi": "636023629",
@@ -36983,10 +35793,10 @@
    "name": "SYNTHESE 12",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.8798,
-   "lon": 4.26899,
+   "lat": 51.87976,
+   "lon": 4.26884,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:02:01+00:00",
+   "last_seen_utc": "2026-10-27T20:38:21+00:00",
    "port": "로테르담항",
    "ship_type": 99,
    "destination": "UNBEKANNT"
@@ -37070,7 +35880,14 @@
    "name": "FAITH",
    "ship_type": 71,
    "destination": "NLRTM - KRAMER",
-   "imo": 9301108
+   "imo": 9301108,
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.94458,
+   "lon": 4.03962,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:23+00:00",
+   "port": "로테르담항"
   },
   "244790536": {
    "mmsi": "244790536",
@@ -37126,7 +35943,10 @@
    "lon": 4.19789,
    "sog": 0,
    "last_seen_utc": "2026-10-27T16:01:36+00:00",
-   "port": "로테르담항"
+   "port": "로테르담항",
+   "ship_type": 80,
+   "destination": "NL RTM",
+   "imo": 9853216
   },
   "244010809": {
    "mmsi": "244010809",
@@ -37249,10 +36069,10 @@
    "name": "MI-MUNDO",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.86591,
-   "lon": 4.29611,
-   "sog": 7.6,
-   "last_seen_utc": "2026-10-27T15:59:43+00:00",
+   "lat": 51.94442,
+   "lon": 4.04686,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:38+00:00",
    "port": "로테르담항"
   },
   "271002559": {
@@ -37348,10 +36168,10 @@
    "destination": "NLTNZ00130CITYX00328",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.88096,
-   "lon": 4.2437,
+   "lat": 51.88148,
+   "lon": 4.24225,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:44+00:00",
+   "last_seen_utc": "2026-10-27T20:39:24+00:00",
    "port": "로테르담항"
   },
   "563255900": {
@@ -37445,9 +36265,9 @@
    "status": 0,
    "status_text": "항해 중",
    "lat": 51.94973,
-   "lon": 4.1245,
+   "lon": 4.12448,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:35+00:00",
+   "last_seen_utc": "2026-10-27T20:38:01+00:00",
    "port": "로테르담항"
   },
   "244790660": {
@@ -37511,10 +36331,10 @@
    "name": "CHRISTIANE DEYMANN 1",
    "status": 5,
    "status_text": "계류(접안)",
-   "lat": 51.88316,
-   "lon": 4.2659,
+   "lat": 51.88541,
+   "lon": 4.27947,
    "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:46+00:00",
+   "last_seen_utc": "2026-10-27T20:37:38+00:00",
    "port": "로테르담항"
   },
   "538008428": {
@@ -37523,10 +36343,10 @@
    "name": "DALE",
    "status": 1,
    "status_text": "묘박(정박지 대기)",
-   "lat": 1.24592,
-   "lon": 103.79223,
-   "sog": 0,
-   "last_seen_utc": "2026-10-27T16:00:49+00:00",
+   "lat": 1.2449,
+   "lon": 103.79229,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:39:50+00:00",
    "port": "싱가포르항"
   },
   "205585890": {
@@ -37727,10 +36547,10 @@
    "name": "BREYDEL",
    "status": 0,
    "status_text": "항해 중",
-   "lat": 51.86573,
-   "lon": 4.27898,
-   "sog": 10.4,
-   "last_seen_utc": "2026-10-27T16:02:30+00:00",
+   "lat": 51.95149,
+   "lon": 4.11981,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:00+00:00",
    "port": "로테르담항"
   },
   "244700986": {
@@ -37739,6 +36559,588 @@
    "name": "VIRTUS",
    "ship_type": 79,
    "destination": "WEER TERUG"
+  },
+  "244790084": {
+   "mmsi": "244790084",
+   "events": [],
+   "name": "PENDRECHT",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.88157,
+   "lon": 4.34836,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:38+00:00",
+   "port": "로테르담항"
+  },
+  "538008903": {
+   "mmsi": "538008903",
+   "events": [],
+   "name": "FEDERAL MOSEL",
+   "ship_type": 70,
+   "destination": "CAQUE-NLRTM",
+   "imo": 9766188,
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.95936,
+   "lon": 4.12573,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:36+00:00",
+   "port": "로테르담항"
+  },
+  "244020258": {
+   "mmsi": "244020258",
+   "events": [],
+   "name": "DELTA",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.96833,
+   "lon": 4.04877,
+   "sog": 9,
+   "last_seen_utc": "2026-10-27T20:37:37+00:00",
+   "port": "로테르담항"
+  },
+  "244830176": {
+   "mmsi": "244830176",
+   "events": [],
+   "name": "CALIFORNIA",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.93846,
+   "lon": 4.20354,
+   "sog": 11.6,
+   "last_seen_utc": "2026-10-27T20:39:37+00:00",
+   "port": "로테르담항"
+  },
+  "244690236": {
+   "mmsi": "244690236",
+   "events": [],
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.88515,
+   "lon": 4.27978,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:39+00:00",
+   "port": "로테르담항",
+   "name": "REPOS AILLEURS"
+  },
+  "352005960": {
+   "mmsi": "352005960",
+   "events": [],
+   "name": "NAGATO II",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.25163,
+   "lon": 103.97353,
+   "sog": 6.7,
+   "last_seen_utc": "2026-10-27T20:37:46+00:00",
+   "port": "싱가포르항"
+  },
+  "636024966": {
+   "mmsi": "636024966",
+   "events": [],
+   "name": "NORTHERN GUARD",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.20982,
+   "lon": 103.87675,
+   "sog": 8.2,
+   "last_seen_utc": "2026-10-27T20:37:46+00:00",
+   "port": "싱가포르항"
+  },
+  "574252000": {
+   "mmsi": "574252000",
+   "events": [],
+   "name": "PETROLIMEX 16",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.22395,
+   "lon": 103.7895,
+   "sog": 8.1,
+   "last_seen_utc": "2026-10-27T20:37:49+00:00",
+   "port": "싱가포르항"
+  },
+  "231917000": {
+   "mmsi": "231917000",
+   "events": [],
+   "name": "KOBE PIONIER",
+   "ship_type": 88,
+   "destination": "NLRTM",
+   "imo": 9747261
+  },
+  "244700697": {
+   "mmsi": "244700697",
+   "events": [],
+   "name": "AVELIE",
+   "ship_type": 79,
+   "destination": "ROTTERDAM CALANDKANA"
+  },
+  "246553000": {
+   "mmsi": "246553000",
+   "events": [],
+   "name": "STELLA ORION",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.96987,
+   "lon": 4.13258,
+   "sog": 9.5,
+   "last_seen_utc": "2026-10-27T20:38:14+00:00",
+   "port": "로테르담항"
+  },
+  "636023320": {
+   "mmsi": "636023320",
+   "events": [],
+   "name": "CENTURY ZHENGZHOU",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.23694,
+   "lon": 103.96662,
+   "sog": 12.2,
+   "last_seen_utc": "2026-10-27T20:38:00+00:00",
+   "port": "싱가포르항"
+  },
+  "244740537": {
+   "mmsi": "244740537",
+   "events": [],
+   "name": "ALBATROS",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.94206,
+   "lon": 4.11793,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:15+00:00",
+   "port": "로테르담항"
+  },
+  "211732570": {
+   "mmsi": "211732570",
+   "events": [],
+   "name": "MONIKA DEYMANN",
+   "ship_type": 79,
+   "destination": "DBG SCHWELGERN",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.86018,
+   "lon": 4.3404,
+   "sog": 11.5,
+   "last_seen_utc": "2026-10-27T20:38:22+00:00",
+   "port": "로테르담항"
+  },
+  "548987000": {
+   "mmsi": "548987000",
+   "events": [],
+   "name": "PACIFIC ESPERANZA",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.25555,
+   "lon": 103.87624,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:08+00:00",
+   "port": "싱가포르항"
+  },
+  "244010716": {
+   "mmsi": "244010716",
+   "events": [],
+   "name": "TITAN",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.92196,
+   "lon": 4.21774,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:38:11+00:00",
+   "port": "로테르담항"
+  },
+  "211741810": {
+   "mmsi": "211741810",
+   "events": [],
+   "name": "OLGA CAROLINE",
+   "ship_type": 80,
+   "destination": "ROTTERDAM  EXXONMOB"
+  },
+  "253465000": {
+   "mmsi": "253465000",
+   "events": [],
+   "name": "CORYLOPHIDA",
+   "ship_type": 99,
+   "destination": "ROTTERDAM  EXXONMOBI"
+  },
+  "244002085": {
+   "mmsi": "244002085",
+   "events": [],
+   "name": "BERNINA",
+   "ship_type": 79,
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.89202,
+   "lon": 4.32894,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:07+00:00",
+   "port": "로테르담항"
+  },
+  "636020166": {
+   "mmsi": "636020166",
+   "events": [],
+   "name": "MAHARAJ",
+   "ship_type": 70,
+   "destination": "SINGAPORE",
+   "imo": 9735165
+  },
+  "244001596": {
+   "mmsi": "244001596",
+   "events": [],
+   "name": "MOOREA",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.88159,
+   "lon": 4.3062,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:24+00:00",
+   "port": "로테르담항"
+  },
+  "211274540": {
+   "mmsi": "211274540",
+   "events": [],
+   "name": "ESJA",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.88294,
+   "lon": 4.26844,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:33+00:00",
+   "port": "로테르담항"
+  },
+  "205590590": {
+   "mmsi": "205590590",
+   "events": [],
+   "name": "GERONIMO",
+   "ship_type": 80,
+   "destination": "ROTTERDAM 3E PETROHA"
+  },
+  "244810054": {
+   "mmsi": "244810054",
+   "events": [],
+   "name": "JUMBO KINETIC",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.25892,
+   "lon": 103.88162,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:39+00:00",
+   "port": "싱가포르항"
+  },
+  "244012291": {
+   "mmsi": "244012291",
+   "events": [],
+   "name": "SALACIA",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.8578,
+   "lon": 4.34297,
+   "sog": 10.4,
+   "last_seen_utc": "2026-10-27T20:38:42+00:00",
+   "port": "로테르담항",
+   "ship_type": 80,
+   "destination": "ROTTERDAM 3E PETROHA"
+  },
+  "533132177": {
+   "mmsi": "533132177",
+   "events": [],
+   "name": "EAGLE CAMPOS",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 52.01076,
+   "lon": 3.64777,
+   "sog": 9.3,
+   "last_seen_utc": "2026-10-27T20:38:43+00:00",
+   "port": "로테르담항"
+  },
+  "636022350": {
+   "mmsi": "636022350",
+   "events": [],
+   "name": "OLYMPIC BAY",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.25573,
+   "lon": 103.78631,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:38:43+00:00",
+   "port": "싱가포르항"
+  },
+  "244650035": {
+   "mmsi": "244650035",
+   "events": [],
+   "name": "FIDATO",
+   "ship_type": 79,
+   "destination": "EINFAHRT ZUM HANDEL"
+  },
+  "231894000": {
+   "mmsi": "231894000",
+   "events": [],
+   "name": "FURE SPEAR",
+   "ship_type": 80,
+   "destination": "NL RTM",
+   "imo": 9409273
+  },
+  "565696000": {
+   "mmsi": "565696000",
+   "events": [],
+   "name": "OTANA BHUM",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.22742,
+   "lon": 103.90115,
+   "sog": 9.7,
+   "last_seen_utc": "2026-10-27T20:38:54+00:00",
+   "port": "싱가포르항"
+  },
+  "244750631": {
+   "mmsi": "244750631",
+   "events": [],
+   "name": "VARIUS",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.95034,
+   "lon": 4.12579,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:38:55+00:00",
+   "port": "로테르담항"
+  },
+  "211129800": {
+   "mmsi": "211129800",
+   "events": [],
+   "name": "EILTANK 250 _",
+   "ship_type": 89,
+   "destination": "ROTTERDAM"
+  },
+  "357387000": {
+   "mmsi": "357387000",
+   "events": [],
+   "name": "JADE STAR",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.22528,
+   "lon": 103.79322,
+   "sog": 8.8,
+   "last_seen_utc": "2026-10-27T20:39:01+00:00",
+   "port": "싱가포르항"
+  },
+  "244087055": {
+   "mmsi": "244087055",
+   "events": [],
+   "name": "WEST VIRGINIA",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.86694,
+   "lon": 4.29851,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:07+00:00",
+   "port": "로테르담항"
+  },
+  "244660616": {
+   "mmsi": "244660616",
+   "events": [],
+   "name": "EDELWEISS",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.89249,
+   "lon": 4.34105,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:10+00:00",
+   "port": "로테르담항"
+  },
+  "244660412": {
+   "mmsi": "244660412",
+   "events": [],
+   "name": "MA-BAKER",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.87726,
+   "lon": 4.29287,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:10+00:00",
+   "port": "로테르담항"
+  },
+  "259082000": {
+   "mmsi": "259082000",
+   "events": [],
+   "name": "RIBERA DUERO KNUTSEN",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 52.0193,
+   "lon": 3.9275,
+   "sog": 8.6,
+   "last_seen_utc": "2026-10-27T20:39:13+00:00",
+   "port": "로테르담항"
+  },
+  "235095972": {
+   "mmsi": "235095972",
+   "events": [],
+   "name": "STOLT SANDERLING",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.99529,
+   "lon": 3.9616,
+   "sog": 10.4,
+   "last_seen_utc": "2026-10-27T20:40:20+00:00",
+   "port": "로테르담항"
+  },
+  "244806000": {
+   "mmsi": "244806000",
+   "events": [],
+   "name": "SL22 STELLA MARIS",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.86628,
+   "lon": 3.92293,
+   "sog": 1.1,
+   "last_seen_utc": "2026-10-27T20:39:20+00:00",
+   "port": "로테르담항"
+  },
+  "244620839": {
+   "mmsi": "244620839",
+   "events": [],
+   "name": "NEW HAMPSHIRE",
+   "ship_type": 99,
+   "destination": "PRINSES MARGRIETHAVE"
+  },
+  "533048500": {
+   "mmsi": "533048500",
+   "events": [],
+   "name": "ORKIM LEADER",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.24228,
+   "lon": 103.7957,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:31+00:00",
+   "port": "싱가포르항"
+  },
+  "244013027": {
+   "mmsi": "244013027",
+   "events": [],
+   "name": "KEDIA",
+   "ship_type": 79,
+   "destination": "VLAARDINGEN"
+  },
+  "271049458": {
+   "mmsi": "271049458",
+   "events": [],
+   "name": "SELENA ATK",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 51.9056,
+   "lon": 3.63915,
+   "sog": 0.2,
+   "last_seen_utc": "2026-10-27T20:39:37+00:00",
+   "port": "로테르담항"
+  },
+  "636021344": {
+   "mmsi": "636021344",
+   "events": [],
+   "name": "AFRICA",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.26129,
+   "lon": 103.91318,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:38+00:00",
+   "port": "싱가포르항"
+  },
+  "244750585": {
+   "mmsi": "244750585",
+   "events": [],
+   "name": "VIA NOSTRA",
+   "ship_type": 79,
+   "destination": "DATTEL"
+  },
+  "566187000": {
+   "mmsi": "566187000",
+   "events": [],
+   "name": "MAERSK CAPE TOWN",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 1.24167,
+   "lon": 103.94682,
+   "sog": 6.8,
+   "last_seen_utc": "2026-10-27T20:39:56+00:00",
+   "port": "싱가포르항"
+  },
+  "244650016": {
+   "mmsi": "244650016",
+   "events": [],
+   "name": "PRONTO",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 51.93784,
+   "lon": 4.03468,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:39:59+00:00",
+   "port": "로테르담항"
+  },
+  "244630945": {
+   "mmsi": "244630945",
+   "events": [],
+   "name": "MORDOMIA",
+   "ship_type": 79,
+   "destination": "NA"
+  },
+  "244730977": {
+   "mmsi": "244730977",
+   "events": [],
+   "name": "JANNA-MARIA 3",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.87554,
+   "lon": 4.23785,
+   "sog": 9.5,
+   "last_seen_utc": "2026-10-27T20:40:04+00:00",
+   "port": "로테르담항"
+  },
+  "212582000": {
+   "mmsi": "212582000",
+   "events": [],
+   "name": "GRECO LIBERO",
+   "status": 1,
+   "status_text": "묘박(정박지 대기)",
+   "lat": 1.24565,
+   "lon": 103.91631,
+   "sog": 0.1,
+   "last_seen_utc": "2026-10-27T20:40:04+00:00",
+   "port": "싱가포르항"
+  },
+  "255916109": {
+   "mmsi": "255916109",
+   "events": [],
+   "name": "ATHENIAN HORIZON",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.98749,
+   "lon": 3.87977,
+   "sog": 10.7,
+   "last_seen_utc": "2026-10-27T20:40:08+00:00",
+   "port": "로테르담항"
+  },
+  "244083478": {
+   "mmsi": "244083478",
+   "events": [],
+   "name": "KYARA",
+   "status": 0,
+   "status_text": "항해 중",
+   "lat": 51.94598,
+   "lon": 4.1707,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:18+00:00",
+   "port": "로테르담항"
+  },
+  "563750000": {
+   "mmsi": "563750000",
+   "events": [],
+   "name": "PSA SUSTAINABILITY",
+   "status": 5,
+   "status_text": "계류(접안)",
+   "lat": 1.2659,
+   "lon": 103.84113,
+   "sog": 0,
+   "last_seen_utc": "2026-10-27T20:40:23+00:00",
+   "port": "싱가포르항"
   }
  }
 }
